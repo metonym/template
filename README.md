@@ -1,24 +1,16 @@
-# template-typescript
+# component-svelte
 
-> Template for scaffolding projects written in TypeScript.
+> Template for developing a Svelte component.
 
 ## Quick Start
 
 ```sh
-npx degit metonym/template#typescript typescript-project
-cd typescript-project
+npx degit metonym/template#component-svelte svelte-component
+cd svelte-component
 yarn
 ```
 
 ## Available Scripts
-
-### `yarn test:tdd`
-
-Write your app using test-driven development.
-
-### `yarn test`
-
-Runs tests once.
 
 ### `yarn prepack`
 

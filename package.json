@@ -1,17 +1,26 @@
 {
-  "name": "template-typescript",
-  "version": "0.1.0",
+  "name": "component-svelte",
+  "version": "0.0.1",
   "license": "MIT",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "svelte": "src/index.js",
+  "main": "lib/index.js",
+  "module": "lib/index.mjs",
+  "sideEffects": false,
   "scripts": {
-    "test": "tsnd src/tests",
-    "test:tdd": "tsnd --respawn src/tests",
-    "prepack": "tsc"
+    "prepack": "rollup -c"
+  },
+  "peerDependencies": {
+    "svelte": "^3.20.x"
   },
   "devDependencies": {
-    "@types/node": "^14.0.4",
-    "ts-node-dev": "^1.0.0-pre.44",
-    "typescript": "^3.9.3"
-  }
+    "@rollup/plugin-node-resolve": "^8.0.0",
+    "rollup": "^2.10.8",
+    "rollup-plugin-svelte": "^5.2.2",
+    "rollup-plugin-terser": "^6.0.1",
+    "svelte": "^3.20.x"
+  },
+  "files": [
+    "lib",
+    "src"
+  ]
 }
