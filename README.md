@@ -8,6 +8,8 @@
 
 - **[component-svelte](https://github.com/metonym/template/tree/component-svelte)**: Develop Svelte components with support for UMD/ESM/uncompiled Svelte formats.
 
+- **[webpack-svelte](https://github.com/metonym/template/tree/webpack-svelte)**: Build Svelte apps with webpack.
+
 ## [License](LICENSE)
 
 MIT
