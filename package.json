@@ -2,6 +2,8 @@
   "name": "component-svelte",
   "version": "0.0.1",
   "license": "MIT",
+  "description": "<< >>",
+  "author": "Eric Liu (https://github.com/metonym)",
   "svelte": "src/index.js",
   "main": "lib/index.js",
   "module": "lib/index.mjs",
@@ -19,6 +21,16 @@
     "rollup-plugin-terser": "^6.0.1",
     "svelte": "^3.20.x"
   },
+  "repository": {
+    "type": "git",
+    "url": "<< >>"
+  },
+  "homepage": "<< >>",
+  "bugs": "<< >>",
+  "keywords": [
+    "svelte",
+    "svelte component"
+  ],
   "files": [
     "lib",
     "src"
