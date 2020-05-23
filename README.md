@@ -1,28 +1,24 @@
-# template-typescript
+# webpack-svelte
 
-> Template for scaffolding projects written in TypeScript.
+> Template for building Svelte apps with webpack.
 
 ## Quick Start
 
 ```sh
-npx degit metonym/template#typescript typescript-project
-cd typescript-project
+npx degit metonym/template#webpack-svelte svelte-app
+cd svelte-app
 yarn
 ```
 
 ## Available Scripts
 
-### `yarn test:tdd`
+### `yarn start`
 
-Write your app using test-driven development.
+Start the app in development mode.
 
-### `yarn test`
+### `yarn build`
 
-Runs tests once.
-
-### `yarn prepack`
-
-Builds the project for production at the publish step.
+Build the app for production.
 
 ## [License](LICENSE)
 
