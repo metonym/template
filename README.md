@@ -2,6 +2,16 @@
 
 > Collection of templates for quick project scaffolding.
 
+Each template exists on a dedicated branch.
+
+Use `degit` to copy to repository:
+
+```sh
+npx degit metonym/template#<branch> <project-name>
+cd <project-name>
+yarn
+```
+
 ## Templates
 
 - **[typescript](https://github.com/metonym/template/tree/typescript)**: Write projects in TypeScript. Uses `ts-node-dev` for fast compiling and the native Node.js `assert` library for testing.
