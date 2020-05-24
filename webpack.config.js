@@ -1,6 +1,10 @@
 const webpack = require("webpack");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const HTMLInlineCSSWebpackPlugin = require("html-inline-css-webpack-plugin")
+  .default;
 const path = require("path");
 const { version } = require("./package.json");
 
@@ -22,13 +26,26 @@ module.exports = {
     rules: [
       {
         test: /\.svelte$/,
-        use: { loader: "svelte-loader", options: { hotReload: true } },
+        use: {
+          loader: "svelte-loader",
+          options: { emitCss: true, hotReload: true },
+        },
+      },
+      {
+        test: /\.css$/,
+        use: [
+          IS_PROD ? MiniCssExtractPlugin.loader : "style-loader",
+          "css-loader",
+        ],
       },
     ],
   },
   plugins: [
     new CleanWebpackPlugin(),
+    new MiniCssExtractPlugin({ filename: "[name].[chunkhash].css" }),
+    new OptimizeCssAssetsPlugin(),
     new HtmlWebpackPlugin({ template: "src/index.html" }),
+    new HTMLInlineCSSWebpackPlugin(),
     new webpack.DefinePlugin({ VERSION: JSON.stringify(version) }),
   ],
 };
