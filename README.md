@@ -16,6 +16,8 @@ yarn
 
 Builds the project for production at the publish step.
 
+## [Changelog](CHANGELOG.md)
+
 ## [License](LICENSE)
 
 MIT
