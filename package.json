@@ -2,8 +2,8 @@
   "name": "template-typescript",
   "version": "0.1.0",
   "license": "MIT",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "test": "tsnd src/tests",
     "test:tdd": "tsnd --respawn src/tests",
