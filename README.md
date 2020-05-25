@@ -55,6 +55,8 @@ interface Options {
 }
 ```
 
+## [Changelog](CHANGELOG.md)
+
 ## License
 
 [MIT](LICENSE)
