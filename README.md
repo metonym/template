@@ -30,6 +30,8 @@ yarn
 
 - **[webpack-svelte](https://github.com/metonym/template/tree/webpack-svelte)**: Build Svelte apps with webpack.
 
+- **[rollup-svelte](https://github.com/metonym/template/tree/webpack-svelte)**: Build Svelte apps with Rollup.
+
 ## [License](LICENSE)
 
 MIT
