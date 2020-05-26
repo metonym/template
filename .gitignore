@@ -1,6 +1,5 @@
-.DS_STORE
-.vscode
-node_modules/
-dist/
-lib/
-build/
+.DS_Store
+/build
+/node_modules
+yarn-debug.log*
+yarn-error.log*

@@ -1,34 +1,24 @@
-# template
+# rollup-svelte
 
-> Collection of templates for quick project scaffolding.
+> Template for building Svelte apps with Rollup.
 
-Each template exists on a dedicated branch.
-
-Use `degit` to copy to repository:
+## Quick Start
 
 ```sh
-npx degit metonym/template#<branch> <project-name>
-cd <project-name>
+npx degit metonym/template#rollup-svelte svelte-app
+cd svelte-app
 yarn
 ```
 
-## Templates
+## Available Scripts
 
-### General purpose
+### `yarn start`
 
-- **[typescript](https://github.com/metonym/template/tree/typescript)**: Write projects in TypeScript. Uses `ts-node-dev` for fast compiling and the native Node.js `assert` library for testing.
+Start the app in development mode.
 
-### Components
+### `yarn build`
 
-- **[component-svelte](https://github.com/metonym/template/tree/component-svelte)**: Develop Svelte components with support for UMD/ESM/uncompiled Svelte formats.
-
-### Plugins
-
-- **[plugin-posthtml](https://github.com/metonym/template/tree/plugin-posthtml)**: Develop PostHTML plugins written in TypeScript.
-
-### Web apps
-
-- **[webpack-svelte](https://github.com/metonym/template/tree/webpack-svelte)**: Build Svelte apps with webpack.
+Build the app for production.
 
 ## [License](LICENSE)
 
