@@ -2,9 +2,9 @@
 
 > Collection of templates for quick project scaffolding.
 
-Each template exists on a dedicated branch.
+Each template exists in a dedicated branch.
 
-Use `degit` to copy to repository:
+Use [degit](https://github.com/Rich-Harris/degit) to copy to repository:
 
 ```sh
 npx degit metonym/template#<branch> <project-name>
@@ -30,7 +30,7 @@ yarn
 
 - **[webpack-svelte](https://github.com/metonym/template/tree/webpack-svelte)**: Build Svelte apps with webpack.
 
-- **[rollup-svelte](https://github.com/metonym/template/tree/webpack-svelte)**: Build Svelte apps with Rollup.
+- **[rollup-svelte](https://github.com/metonym/template/tree/rollup-svelte)**: Build Svelte apps with Rollup.
 
 ## [License](LICENSE)
 
