@@ -32,6 +32,6 @@ yarn
 
 - **[rollup-svelte](https://github.com/metonym/template/tree/rollup-svelte)**: Build Svelte apps with Rollup.
 
-## [License](LICENSE)
+## License
 
-MIT
+[MIT](LICENSE)
