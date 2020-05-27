@@ -1,8 +1,8 @@
 {
-  "name": "plugin-posthtml",
+  "name": "plugin-postcss",
   "version": "0.1.0",
   "license": "MIT",
-  "description": "PostHTML plugin template",
+  "description": "PostCSS plugin template",
   "author": "Eric Liu (https://github.com/metonym)",
   "main": "./lib/plugin.js",
   "types": "./lib/plugin.d.ts",
@@ -12,7 +12,7 @@
     "prepack": "tsc"
   },
   "dependencies": {
-    "posthtml": "^0.13.0"
+    "postcss": "^7.0.31"
   },
   "devDependencies": {
     "@types/node": "^14.0.4",
@@ -26,8 +26,8 @@
   "homepage": "https://github.com/metonym/template",
   "bugs": "https://github.com/metonym/template/issues",
   "keywords": [
-    "posthtml",
-    "posthtml plugin",
+    "postcss",
+    "postcss plugin",
     "plugin"
   ],
   "files": [

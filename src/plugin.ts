@@ -1,10 +1,14 @@
-import { PostHTML } from "posthtml";
+import postcss from "postcss";
 
-function plugin(options?: {}) {
-  return function (tree: PostHTML.Node) {
-    return tree;
+const plugin = postcss.plugin("postcss-plugin", (options?: {}) => {
+  return (root, result) => {
+    root.walkRules((node) => {
+      if (node.selector === "*") {
+        node.append({ prop: "font-size", value: "16px" });
+      }
+    });
   };
-}
+});
 
 export default plugin;
 export { plugin };

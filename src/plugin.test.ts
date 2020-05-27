@@ -1,10 +1,12 @@
-import posthtml from "posthtml";
+import postcss from "postcss";
 import { strict as test } from "assert";
 import { plugin } from "./plugin";
 
 async function run() {
-  const { html } = await posthtml().use(plugin()).process("<body></body>");
-  test.equal(html, "<body></body>");
+  const result = await postcss(plugin).process("* { color: red; }", {
+    from: undefined,
+  });
+  test.equal(result.css, "* { color: red; font-size: 16px; }");
 }
 
 run();
