@@ -37,6 +37,6 @@ CSS emitted from Svelte is optimized and inlined in the `index.html` when buildi
 }
 ```
 
-## [License](LICENSE)
+## License
 
-MIT
+[MIT](LICENSE)
