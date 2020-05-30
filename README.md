@@ -24,6 +24,6 @@ Runs tests once.
 
 Builds the project for production at the publish step.
 
-## [License](LICENSE)
+## License
 
-MIT
+[MIT](LICENSE)
