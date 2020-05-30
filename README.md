@@ -44,7 +44,9 @@ interface Options {
 }
 ```
 
-## [Changelog](CHANGELOG.md)
+## Changelog
+
+[CHANGELOG.md](CHANGELOG.md)
 
 ## License
 
