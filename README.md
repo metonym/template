@@ -1,12 +1,17 @@
-# template-typescript
+# template-typescript-lib
 
 > Template for scaffolding projects written in TypeScript.
+
+The difference between this template and `template#typescript` is that it contains publishing metadata:
+
+- `package.json` fields like description, author, git, bugs, keywords, files
+- `CHANGELOG.md`
 
 ## Quick Start
 
 ```sh
-npx degit metonym/template#typescript typescript-project
-cd typescript-project
+npx degit metonym/template#typescript-lib typescript-lib
+cd typescript-lib
 yarn
 ```
 
@@ -24,6 +29,10 @@ Runs tests once.
 
 Builds the project for production at the publish step.
 
-## [License](LICENSE)
+## Changelog
 
-MIT
+[CHANGELOG.md](CHANGELOG.md)
+
+## License
+
+[MIT](LICENSE)
