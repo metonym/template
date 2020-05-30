@@ -20,6 +20,6 @@ Start the app in development mode.
 
 Build the app for production.
 
-## [License](LICENSE)
+## License
 
-MIT
+[MIT](LICENSE)
