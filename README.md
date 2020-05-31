@@ -4,7 +4,7 @@
 
 Each template exists in a dedicated branch.
 
-Use [degit](https://github.com/Rich-Harris/degit) to copy to repository:
+Use [degit](https://github.com/Rich-Harris/degit) to copy the repository:
 
 ```sh
 npx degit metonym/template#<branch> <project-name>
