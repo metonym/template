@@ -1,12 +1,12 @@
-# rollup-svelte
+# rollup-lib
 
-> Template for building Svelte apps with Rollup.
+> Template for bundling libraries with Rollup for various output formats.
 
 ## Quick Start
 
 ```sh
-npx degit metonym/template#rollup-svelte svelte-app
-cd svelte-app
+npx degit metonym/template#rollup-lib rollup-lib
+cd rollup-lib
 yarn
 ```
 
@@ -14,11 +14,11 @@ yarn
 
 ### `yarn start`
 
-Start the app in development mode.
+Start the project in development mode.
 
-### `yarn build`
+### `yarn prepack`
 
-Build the app for production.
+Build the project for production.
 
 ## License
 

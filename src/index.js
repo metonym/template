@@ -1,5 +1,9 @@
-import App from "./App.svelte";
+function add(a, b) {
+  return a + b;
+}
 
-const app = new App({ target: document.body });
+function multiply(a, b) {
+  return a * b;
+}
 
-export default app;
+export { multiply };
