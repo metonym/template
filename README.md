@@ -4,13 +4,15 @@
 
 Each template exists in a dedicated branch.
 
-Use [degit](https://github.com/Rich-Harris/degit) to copy the repository:
+Use [degit](https://github.com/Rich-Harris/degit) to copy the template:
 
 ```sh
 npx degit metonym/template#<branch> <project-name>
 cd <project-name>
 yarn
 ```
+
+Currently, there are five categories of templates: general purpose (prototyping), generic library (intended to be published to npm), library/framework-specific components, plugins, and web apps.
 
 ## Templates
 
