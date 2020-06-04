@@ -2,6 +2,10 @@
 
 > Template for developing a Svelte component.
 
+Rollup is used to support the ESM/UMD output formats ("module", "main" fields in `package.json`, respectively).
+
+The "svelte" (uncompiled) entry is `src/index.js`.
+
 ## Quick Start
 
 ```sh
@@ -14,7 +18,7 @@ yarn
 
 ### `yarn prepack`
 
-Builds the project for production at the publish step.
+Builds the component for production at the publish step.
 
 ## Changelog
 
