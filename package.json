@@ -15,9 +15,9 @@
     "posthtml": "^0.13.0"
   },
   "devDependencies": {
-    "@types/node": "^14.0.4",
-    "ts-node-dev": "^1.0.0-pre.44",
-    "typescript": "^3.9.3"
+    "@types/node": "^14.0.13",
+    "ts-node-dev": "^1.0.0-pre.47",
+    "typescript": "^3.9.5"
   },
   "repository": {
     "type": "git",
