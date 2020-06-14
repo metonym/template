@@ -14,6 +14,10 @@ yarn
 
 Currently, there are five categories of templates: general purpose (prototyping), generic library (intended to be published to npm), library/framework-specific components, plugins, and web apps.
 
+- General purpose, library and plugin templates use the native Node.js assertion module for testing. They also have a "prepack" script defined for building the library before publishing to npm.
+
+- Web app templates start off with only development/build scripts in order to be as light as possible.
+
 ## Templates
 
 ### General purpose
