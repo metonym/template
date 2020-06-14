@@ -1,6 +1,5 @@
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
-import { terser } from "rollup-plugin-terser";
 import pkg from "./package.json";
 
 const IS_PROD = !process.env.ROLLUP_WATCH;
