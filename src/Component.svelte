@@ -7,5 +7,5 @@
   on:click={() => {
     count += 1;
   }}>
-  {count}
+  Increment the count: {count}
 </button>
