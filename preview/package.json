@@ -3,7 +3,7 @@
   "scripts": {
     "develop": "sapper dev",
     "build": "sapper export --basepath component-svelte",
-    "deploy": "gh-pages public/component-svelte"
+    "deploy": "gh-pages -d public/component-svelte"
   },
   "dependencies": {
     "polka": "next"
