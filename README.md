@@ -2,7 +2,7 @@
 
 > Collection of templates for quick project scaffolding.
 
-Each template exists in a dedicated branch.
+Having templates exist on dedicated branches makes it easier to maintain and document. These are some templates that I have frequently or recently used.
 
 Use [degit](https://github.com/Rich-Harris/degit) to copy the template:
 
