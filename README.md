@@ -2,7 +2,7 @@
 
 > Collection of templates for quick project scaffolding.
 
-Having templates exist on dedicated branches makes it easier to maintain and document. These are some templates that I have frequently or recently used.
+These are some templates that I frequently use to scaffold new projects. Having templates exist on dedicated branches in a single repository makes it easier to maintain and document.
 
 Use [degit](https://github.com/Rich-Harris/degit) to copy the template:
 
@@ -12,7 +12,13 @@ cd <project-name>
 yarn
 ```
 
-Currently, there are five categories of templates: general purpose (prototyping), generic library (intended to be published to npm), library/framework-specific components, plugins, and web apps.
+Currently, there are five categories of templates:
+
+1. general purpose (prototyping)
+2. generic library (intended to be published to npm)
+3. library/framework-specific components
+4. plugins
+5. web apps
 
 - General purpose, library and plugin templates use the native Node.js assertion module for testing. They also have a "prepack" script defined for building the library before publishing to npm.
 
