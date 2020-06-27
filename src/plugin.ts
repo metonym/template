@@ -1,4 +1,4 @@
-import { PostHTML } from "posthtml";
+import PostHTML from "posthtml";
 
 function plugin(options?: {}) {
   return function (tree: PostHTML.Node) {
