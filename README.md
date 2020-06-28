@@ -12,6 +12,14 @@ cd <project-name>
 yarn
 ```
 
+Example using the `typescript` template:
+
+```sh
+npx degit metonym/template#typescript typescript
+cd typescript
+yarn
+```
+
 Currently, there are five categories of templates:
 
 1. general purpose (prototyping)
@@ -20,9 +28,7 @@ Currently, there are five categories of templates:
 4. plugins
 5. web apps
 
-- General purpose, library and plugin templates use the native Node.js assertion module for testing. They also have a "prepack" script defined for building the library before publishing to npm.
-
-- Web app templates start off with only development/build scripts in order to be as light as possible.
+General purpose, library and plugin templates use the native Node.js assertion module for testing. They also have a "prepack" script defined for building the library before publishing to npm. Web app templates start off with only development/build scripts in order to be as light as possible.
 
 ## Templates
 
