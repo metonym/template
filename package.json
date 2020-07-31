@@ -4,26 +4,27 @@
   "license": "MIT",
   "description": "<< >>",
   "author": "Eric Liu (https://github.com/metonym)",
-  "main": "lib/main.js",
-  "module": "lib/main.esm.js",
-  "browser": "dist/main.min.js",
+  "main": "./lib/main.js",
+  "module": "./lib/main.esm.js",
+  "browser": "./dist/main.min.js",
   "scripts": {
     "start": "rollup -cw",
     "prepack": "rollup -c"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^13.0.0",
-    "@rollup/plugin-node-resolve": "^8.1.0",
-    "rollup": "^2.19.0",
+    "@rollup/plugin-node-resolve": "^8.4.0",
+    "rollup": "^2.23.0",
     "rollup-plugin-terser": "^6.1.0"
   },
   "repository": {
     "type": "git",
-    "url": "<< >>"
+    "url": "https://github.com/metonym/template"
   },
-  "homepage": "<< >>",
-  "bugs": "<< >>",
-  "keywords": [],
+  "homepage": "https://github.com/metonym/template",
+  "bugs": "https://github.com/metonym/template/issues",
+  "keywords": [
+    "rollup"
+  ],
   "files": [
     "lib",
     "dist"
