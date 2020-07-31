@@ -11,22 +11,19 @@
   "scripts": {
     "prepack": "rollup -c"
   },
-  "peerDependencies": {
-    "svelte": "^3.20.x"
-  },
   "devDependencies": {
-    "@rollup/plugin-node-resolve": "^8.1.0",
-    "rollup": "^2.21.0",
+    "@rollup/plugin-node-resolve": "^8.4.0",
+    "rollup": "^2.23.0",
     "rollup-plugin-svelte": "^5.2.3",
     "rollup-plugin-terser": "^6.1.0",
     "svelte": "^3.24.0"
   },
   "repository": {
     "type": "git",
-    "url": "<< >>"
+    "url": "https://github.com/metonym/template"
   },
-  "homepage": "<< >>",
-  "bugs": "<< >>",
+  "homepage": "https://github.com/metonym/template",
+  "bugs": "https://github.com/metonym/template/issues",
   "keywords": [
     "svelte",
     "svelte component"
