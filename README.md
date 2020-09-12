@@ -105,6 +105,13 @@ npx degit metonym/template#rollup-svelte template
 cd template && yarn
 ```
 
+- **[svite](https://github.com/metonym/template/tree/svite)**: Build Svelte apps with svite.
+
+```sh
+npx degit metonym/template#svite template
+cd template && yarn
+```
+
 ## License
 
 [MIT](LICENSE)
