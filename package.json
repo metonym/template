@@ -1,0 +1,14 @@
+{
+  "version": "0.0.1",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "start": "svite",
+    "build": "svite build"
+  },
+  "devDependencies": {
+    "svelte": "^3.25.0",
+    "svelte-hmr": "^0.10.3",
+    "svite": "^0.6.1"
+  }
+}
