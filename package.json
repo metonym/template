@@ -15,7 +15,7 @@
     "@rollup/plugin-node-resolve": "^9.0.0",
     "rollup": "^2.28.2",
     "rollup-plugin-svelte": "^6.0.1",
-    "svelte": "^3.27.0"
+    "svelte": "^3.29.0"
   },
   "repository": {
     "type": "git",
@@ -30,5 +30,9 @@
   "files": [
     "lib",
     "src"
-  ]
+  ],
+  "prettier": {
+    "svelteStrictMode": true,
+    "svelteBracketNewLine": true
+  }
 }

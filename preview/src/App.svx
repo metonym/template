@@ -1,0 +1,19 @@
+# {name} v{version}
+
+<script>
+  import Button from "component-svelte";
+
+  let version = process.env.VERSION;
+  let name = process.env.NAME;
+  let count = 10;
+</script>
+
+<style>
+  :global(*) {
+    font-family: sans-serif;
+  }
+</style>
+
+## {count}
+
+<Button bind:count />
