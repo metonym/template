@@ -1,0 +1,26 @@
+# svelte-minimal v{version}
+
+<script>
+  import Button from "./Button.svelte";
+
+  let version = process.env.VERSION;
+  let count = 10;
+</script>
+
+<style>
+  :global(*) {
+    font-family: sans-serif;
+  }
+</style>
+
+```html
+<script>
+  import Button from "./Button.svelte";
+
+  let count = 10;
+</script>
+```
+
+## {count}
+
+<Button bind:count>Increment the count</Button>
