@@ -10,11 +10,11 @@
   "types": "./types/index.d.ts",
   "sideEffects": false,
   "scripts": {
-    "svelte-check": "svelte-check",
     "dev": "rollup -cw",
     "predeploy": "rollup -c",
     "deploy": "npx gh-pages -d dist",
-    "prepack": "BUNDLE=true rollup -c"
+    "prepack": "BUNDLE=true rollup -c",
+    "svelte-check": "svelte-check"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^11.0.1",

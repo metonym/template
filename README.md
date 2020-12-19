@@ -28,9 +28,21 @@ yarn
 
 ## Available Scripts
 
+### `yarn dev`
+
+README-driven development.
+
+### `yarn deploy`
+
+Build and deploy the documentation for GitHub Pages.
+
 ### `yarn prepack`
 
 Builds the component for production at the publish step.
+
+### `yarn svelte-check`
+
+Runs `svelte-check` to validate the TypeScript definitions.
 
 ## Changelog
 
