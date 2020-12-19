@@ -4,10 +4,12 @@
 
 <button
   type="button"
+  on:click
   on:click="{() => {
     count += 1;
   }}"
 >
-  Increment the count...
-  {count}
+<slot>
+  Increment the count:
+  {count}</slot>
 </button>

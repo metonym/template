@@ -14,6 +14,18 @@ cd svelte-component
 yarn
 ```
 
+## Usage
+
+```svelte
+<script>
+  import Component from "component-svelte";
+
+  let count = 1;
+</script>
+
+<Component bind:count on:click />
+```
+
 ## Available Scripts
 
 ### `yarn prepack`
