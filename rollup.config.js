@@ -11,7 +11,6 @@ export default () => {
     return svelteReadme({
       svelte: { dev: DEV, immutable: true },
       minify: !DEV,
-      prefixUrl: `${pkg.homepage}/tree/master/`,
     });
   }
 
@@ -26,7 +25,7 @@ export default () => {
         name: UMD ? pkg.name : undefined,
         exports: "named",
       },
-      plugins: [svelte({ emitCss: false }), resolve()],
+      plugins: [svelte(), resolve()],
     };
   });
 };

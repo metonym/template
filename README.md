@@ -1,10 +1,14 @@
 # component-svelte
 
+[![NPM][npm]][npm-url]
+
 > Template for developing a Svelte component.
 
 Rollup is used to support the ESM/UMD output formats ("module", "main" fields in `package.json`, respectively).
 
 The "svelte" (uncompiled) entry is `src/index.js`.
+
+<!-- TOC -->
 
 ## Quick Start
 
@@ -16,6 +20,7 @@ yarn
 
 ## Usage
 
+<!-- prettier-ignore-start -->
 ```svelte
 <script>
   import Component from "component-svelte";
@@ -25,6 +30,7 @@ yarn
 
 <Component bind:count on:click />
 ```
+<!-- prettier-ignore-end -->
 
 ## Available Scripts
 
@@ -51,3 +57,6 @@ Runs `svelte-check` to validate the TypeScript definitions.
 ## License
 
 [MIT](LICENSE)
+
+[npm]: https://img.shields.io/npm/v/component-svelte.svg?style=for-the-badge&color=%23ff3e00
+[npm-url]: https://npmjs.com/package/component-svelte
