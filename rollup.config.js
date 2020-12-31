@@ -4,34 +4,41 @@ import commonjs from "rollup-plugin-commonjs";
 import { terser } from "rollup-plugin-terser";
 import livereload from "rollup-plugin-livereload";
 import serve from "rollup-plugin-serve";
-import copy from "rollup-plugin-copy";
+import { typescript } from 'svelte-preprocess-esbuild';
 
-const IS_PROD = !process.env.ROLLUP_WATCH;
+const PROD = !process.env.ROLLUP_WATCH;
+const PORT = parseInt(process.env.PORT, 10) || 3000;
+const PUBLIC = 'public';
 
 export default {
-  input: "src/index.js",
+  input: "src/index.ts",
   output: {
-    sourcemap: !IS_PROD,
+    sourcemap: !PROD,
     format: "iife",
     name: "app",
-    file: "build/bundle.[hash].js",
+    file: `${PUBLIC}/build/bundle.js`,
   },
   plugins: [
-    copy({ targets: [{ src: "public/*", dest: "build" }] }),
     svelte({
-      dev: !IS_PROD,
-      css: (css) => {
-        css.write("build/bundle.[hash].css", !IS_PROD);
-      },
+      preprocess: [
+        typescript({
+          target: 'es2020'
+        }),
+      ],
+      emitCss: false,
+      compilerOptions: {
+        dev: !PROD,
+        immutable: true
+      }
     }),
     resolve(),
     commonjs(),
-    !IS_PROD &&
-      serve({
-        contentBase: ["build"],
-        port: 3000,
-      }),
-    !IS_PROD && livereload({ watch: "build" }),
-    IS_PROD && terser(),
+    !PROD &&
+    serve({
+      contentBase: [PUBLIC],
+      port: PORT,
+    }),
+    !PROD && livereload({ watch: PUBLIC }),
+    PROD && terser(),
   ],
 };
