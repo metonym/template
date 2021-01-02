@@ -2,7 +2,7 @@
 
 [![NPM][npm]][npm-url]
 
-> Template for developing a Svelte component.
+> component-svelte description
 
 Rollup is used to support the ESM/UMD output formats ("module", "main" fields in `package.json`, respectively).
 
@@ -12,13 +12,15 @@ The "svelte" (uncompiled) entry is `src/index.js`.
 
 ## Quick Start
 
-```sh
-npx degit metonym/template#component-svelte svelte-component
-cd svelte-component
-yarn
+```bash
+yarn add -D component-svelte
+# OR
+npm i -D component-svelte
 ```
 
 ## Usage
+
+### Basic
 
 <!-- prettier-ignore-start -->
 ```svelte
@@ -32,23 +34,25 @@ yarn
 ```
 <!-- prettier-ignore-end -->
 
-## Available Scripts
+## API
 
-### `yarn dev`
+### Props
 
-README-driven development.
+| Prop name | Value                   |
+| :-------- | :---------------------- |
+| count     | `number` (default: `0`) |
 
-### `yarn deploy`
+### Dispatched Events
 
-Build and deploy the documentation for GitHub Pages.
+None.
 
-### `yarn prepack`
+### Forwarded Events
 
-Builds the component for production at the publish step.
+- on:click
 
-### `yarn svelte-check`
+## TypeScript
 
-Runs `svelte-check` to validate the TypeScript definitions.
+To use this component with TypeScript, you will need `svelte` version 3.31 or greater.
 
 ## Changelog
 

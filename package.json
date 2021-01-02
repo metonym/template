@@ -1,8 +1,8 @@
 {
   "name": "component-svelte",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "license": "MIT",
-  "description": "<< >>",
+  "description": "component-svelte description",
   "author": "Eric Liu (https://github.com/metonym)",
   "svelte": "./src/index.js",
   "main": "./lib/index.js",
@@ -17,12 +17,9 @@
     "svelte-check": "svelte-check"
   },
   "devDependencies": {
-    "@rollup/plugin-node-resolve": "^11.0.1",
-    "rollup": "^2.35.1",
-    "rollup-plugin-svelte": "^7.0.0",
     "svelte": "^3.31.0",
     "svelte-check": "^1.1.24",
-    "svelte-readme": "^1.3.1"
+    "svelte-readme": "^2.1.2"
   },
   "repository": {
     "type": "git",
