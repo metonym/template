@@ -4,9 +4,7 @@ import svelteReadme from "svelte-readme";
 import pkg from "./package.json";
 
 export default () => {
-  if (!process.env.BUNDLE) {
-    return svelteReadme();
-  }
+  if (!process.env.BUNDLE) return svelteReadme();
 
   return ["es", "umd"].map((format) => {
     const UMD = format === "umd";

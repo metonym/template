@@ -8,9 +8,13 @@ Rollup is used to support the ESM/UMD output formats ("module", "main" fields in
 
 The "svelte" (uncompiled) entry is `src/index.js`.
 
+<!-- REPO_URL -->
+
+---
+
 <!-- TOC -->
 
-## Quick Start
+## Install
 
 ```bash
 yarn add -D component-svelte
@@ -52,7 +56,7 @@ None.
 
 ## TypeScript
 
-To use this component with TypeScript, you will need `svelte` version 3.31 or greater.
+Svelte version 3.31 or greater is required to use this component with TypeScript.
 
 ## Changelog
 
