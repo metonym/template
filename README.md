@@ -1,12 +1,12 @@
 # template-typescript
 
-> Template for scaffolding projects written in TypeScript.
+> Minimal template for scaffolding TypeScript projects using `ts-node-dev`.
 
 ## Quick Start
 
-```sh
-npx degit metonym/template#typescript typescript-project
-cd typescript-project
+```bash
+npx degit metonym/template#typescript typescript
+cd typescript
 yarn
 ```
 
@@ -14,7 +14,7 @@ yarn
 
 ### `yarn test:tdd`
 
-Write your app using test-driven development.
+Runs tests in watch mode (i.e., test-driven development).
 
 ### `yarn test`
 
