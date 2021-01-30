@@ -15,7 +15,7 @@
     "posthtml": "^0.15.1"
   },
   "devDependencies": {
-    "@types/node": "^14.14.20",
+    "@types/node": "^14.14.22",
     "ts-node-dev": "^1.1.1",
     "typescript": "^4.1.3"
   },
