@@ -1,3 +1,18 @@
+<script>
+  let count = 0;
+</script>
+
+<div>
+  <h1
+    on:click={() => {
+      count++;
+    }}
+  >
+    Hello world
+  </h1>
+  <p>{count}</p>
+</div>
+
 <style>
   div {
     padding: 1rem;
@@ -7,7 +22,3 @@
     font-family: sans-serif;
   }
 </style>
-
-<div>
-  <h1>Hello world</h1>
-</div>

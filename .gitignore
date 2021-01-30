@@ -1,5 +1,5 @@
 .DS_Store
-/build
+/public
 /preview
 /node_modules
 yarn-debug.log*
