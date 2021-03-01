@@ -4,11 +4,11 @@
 
 > component-svelte description
 
+<!-- REPO_URL -->
+
 Rollup is used to support the ESM/UMD output formats ("module", "main" fields in `package.json`, respectively).
 
 The "svelte" (uncompiled) entry is `src/index.js`.
-
-<!-- REPO_URL -->
 
 ---
 
