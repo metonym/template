@@ -1,5 +1,6 @@
 <script>
   let count = 0;
+  let data = {};
 </script>
 
 <div>
@@ -8,10 +9,12 @@
       count++;
     }}
   >
-    Hello world
+    Hello world.
   </h1>
   <p>{count}</p>
 </div>
+
+{data?.a ?? 42}
 
 <style>
   div {
