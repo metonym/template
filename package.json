@@ -1,19 +1,29 @@
 {
+  "name": "esbuild-lib",
   "version": "0.0.1",
-  "private": true,
   "license": "MIT",
+  "description": "<< >>",
+  "author": "Eric Liu (https://github.com/metonym)",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "dev": "svite",
-    "build": "svite build --base= --assetsDir=assets",
-    "deploy": "npx gh-pages -d dist"
+    "dev": "esbuild src/index.ts --outfile=dist/index.js --watch",
+    "prepack": "tsc && esbuild src/index.ts --outdir=dist --bundle --format=cjs"
   },
   "devDependencies": {
-    "mdsvex": "^0.9.0",
-    "svelte": "^3.35.0",
-    "svite": "0.8.1"
+    "esbuild": "^0.11.0",
+    "typescript": "^4.2.3"
   },
-  "prettier": {
-    "svelteStrictMode": true,
-    "svelteBracketNewLine": true
-  }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/metonym/template"
+  },
+  "homepage": "https://github.com/metonym/template",
+  "bugs": "https://github.com/metonym/template/issues",
+  "keywords": [
+    "esbuild"
+  ],
+  "files": [
+    "dist"
+  ]
 }

@@ -1,24 +1,24 @@
-# svite
+# esbuild-lib
 
-> Template for building Svelte apps with [svite](https://github.com/dominikg/svite).
+> Template for developing libraries using [esbuild](https://github.com/evanw/esbuild).
 
 ## Quick Start
 
 ```sh
-npx degit metonym/template#svite svelte-app
-cd svelte-app
+npx degit metonym/template#esbuild-lib esbuild-lib
+cd esbuild-lib
 yarn
 ```
 
 ## Available Scripts
 
-### `yarn start`
+### `yarn dev`
 
-Start the app in development mode.
+Uses `esbuild` to bundle and watch changes to `src/index.ts`.
 
-### `yarn build`
+### `yarn prepack`
 
-Build the app for production.
+Uses `esbuild` to bundle the library and `typescript` to emit declarations.
 
 ## License
 
