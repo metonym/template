@@ -117,6 +117,13 @@ npx degit metonym/template#svite my-svite-app
 cd my-svite-app && yarn
 ```
 
+- **[sveltekit-static](https://github.com/metonym/template/tree/sveltekit-static)**: Build static Svelte apps with SvelteKit and MDSveX.
+
+```sh
+npx degit metonym/template#sveltekit-static my-sveltekit-static-app
+cd my-sveltekit-static-app && yarn
+```
+
 ## License
 
 [MIT](LICENSE)
