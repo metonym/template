@@ -1,19 +1,18 @@
 {
-  "version": "0.0.1",
   "private": true,
-  "license": "MIT",
+  "type": "module",
   "scripts": {
-    "dev": "svite",
-    "build": "svite build --base= --assetsDir=assets",
-    "deploy": "npx gh-pages -d dist"
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "preview": "svelte-kit preview",
+    "format": "prettier --write '.'"
   },
   "devDependencies": {
-    "mdsvex": "^0.9.0",
-    "svelte": "^3.35.0",
-    "svite": "0.8.1"
-  },
-  "prettier": {
-    "svelteStrictMode": true,
-    "svelteBracketNewLine": true
+    "@sveltejs/adapter-static": "next",
+    "@sveltejs/kit": "next",
+    "mdsvex": "^0.9.6",
+    "prettier": "^2.3.0",
+    "prettier-plugin-svelte": "^2.3.0",
+    "svelte": "^3.38.2"
   }
 }
