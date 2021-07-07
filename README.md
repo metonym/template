@@ -14,11 +14,17 @@ The "svelte" (uncompiled) entry is `src/index.js`.
 
 <!-- TOC -->
 
-## Install
+## Installation
+
+**Yarn**
 
 ```bash
 yarn add -D component-svelte
-# OR
+```
+
+**NPM**
+
+```bash
 npm i -D component-svelte
 ```
 
@@ -26,7 +32,6 @@ npm i -D component-svelte
 
 ### Basic
 
-<!-- prettier-ignore-start -->
 ```svelte
 <script>
   import Component from "component-svelte";
@@ -36,7 +41,6 @@ npm i -D component-svelte
 
 <Component bind:count on:click />
 ```
-<!-- prettier-ignore-end -->
 
 ## API
 
@@ -57,6 +61,8 @@ None.
 ## TypeScript
 
 Svelte version 3.31 or greater is required to use this component with TypeScript.
+
+TypeScript definitions are located in the [types folder](types/).
 
 ## Changelog
 
