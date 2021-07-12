@@ -1,19 +1,16 @@
 {
   "version": "0.0.1",
   "private": true,
-  "license": "MIT",
   "scripts": {
-    "dev": "svite",
-    "build": "svite build --base= --assetsDir=assets",
+    "dev": "vite",
+    "build": "vite build'",
     "deploy": "npx gh-pages -d dist"
   },
   "devDependencies": {
-    "mdsvex": "^0.9.0",
-    "svelte": "^3.35.0",
-    "svite": "0.8.1"
-  },
-  "prettier": {
-    "svelteStrictMode": true,
-    "svelteBracketNewLine": true
+    "@sveltejs/vite-plugin-svelte": "next",
+    "mdsvex": "^0.9.8",
+    "svelte": "^3.38.3",
+    "svelte-hmr": "^0.14.5",
+    "vite": "^2.4.1"
   }
 }

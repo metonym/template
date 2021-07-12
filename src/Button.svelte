@@ -4,9 +4,9 @@
 
 <button
   type="button"
-  on:click="{() => {
+  on:click={() => {
     count++;
-  }}"
+  }}
 >
   <slot />
 </button>
