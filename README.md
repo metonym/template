@@ -12,7 +12,7 @@ yarn
 
 ## Available Scripts
 
-### `yarn start`
+### `yarn dev`
 
 Start the project in development mode.
 
