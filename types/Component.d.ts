@@ -1,15 +1,15 @@
 /// <reference types="svelte" />
 import { SvelteComponentTyped } from "svelte";
 
-export interface ComponentProps {
+export interface defaultProps {
   /**
    * @default 0
    */
   count?: number;
 }
 
-export default class Component extends SvelteComponentTyped<
-  ComponentProps,
+export default class extends SvelteComponentTyped<
+  defaultProps,
   { click: WindowEventMap["click"] },
   { default: {} }
 > {}
