@@ -11,8 +11,8 @@
     "prepack": "tsc && esbuild src/index.ts --outdir=dist --bundle --format=cjs"
   },
   "devDependencies": {
-    "esbuild": "^0.11.0",
-    "typescript": "^4.2.3"
+    "esbuild": "^0.12.15",
+    "typescript": "^4.3.5"
   },
   "repository": {
     "type": "git",
