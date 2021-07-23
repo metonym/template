@@ -41,6 +41,13 @@ cd typescript && yarn
 
 ### Generic library
 
+- **[vite-lib](https://github.com/metonym/template/tree/vite-lib)**: Template for developing libraries using [vite](https://github.com/vitejs/vite).
+
+```sh
+npx degit metonym/template#vite-lib my-vite-lib
+cd my-vite-lib && yarn
+```
+
 - **[esbuild-lib](https://github.com/metonym/template/tree/esbuild-lib)**: Template for developing libraries using [esbuild](https://github.com/evanw/esbuild).
 
 ```sh
