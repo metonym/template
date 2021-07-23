@@ -11,7 +11,6 @@ export default {
     },
     rollupOptions: {
       external: Object.keys(pkg.dependencies || {}),
-      
     },
   },
 };
