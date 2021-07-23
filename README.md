@@ -1,6 +1,6 @@
 # svite
 
-> Template for building Svelte apps with [svite](https://github.com/dominikg/svite).
+> Template for building Svelte apps with [@sveltejs/vite-plugin-svelte](https://github.com/sveltejs/vite-plugin-svelte).
 
 ## Quick Start
 
