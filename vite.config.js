@@ -1,9 +1,9 @@
-const pkg = require("./package.json");
-const { svelte } = require("@sveltejs/vite-plugin-svelte");
-const { defineConfig } = require("vite");
-const { mdsvex } = require("mdsvex");
+import pkg from "./package.json";
+import { svelte } from "@sveltejs/vite-plugin-svelte";
+import { defineConfig } from "vite";
+import { mdsvex } from "mdsvex";
 
-module.exports = defineConfig(({ mode }) => {
+export default defineConfig(({ mode }) => {
   return {
     plugins: [
       svelte({
