@@ -46,9 +46,9 @@ npm i -D component-svelte
 
 ### Props
 
-| Prop name | Value                   |
-| :-------- | :---------------------- |
-| count     | `number` (default: `0`) |
+| Prop name | Type     | Default value |
+| :-------- | :------- | :------------ |
+| count     | `number` | `0`           |
 
 ### Dispatched Events
 
