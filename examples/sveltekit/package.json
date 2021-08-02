@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "preview": "svelte-kit preview"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-node": "^1.0.0-next.36",
+    "@sveltejs/kit": "next",
+    "svelte": "^3.41.0"
+  }
+}
