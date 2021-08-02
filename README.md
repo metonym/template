@@ -71,7 +71,7 @@ cd my-rollup-lib && yarn
 
 ### Components
 
-- **[component-svelte](https://github.com/metonym/template/tree/component-svelte)**: Develop Svelte components with support for UMD/ESM/uncompiled Svelte formats.
+- **[component-svelte](https://github.com/metonym/template/tree/component-svelte)**: Develop Svelte components using a "README-driven development" approach.
 
 ```sh
 npx degit metonym/template#component-svelte svelte-component
