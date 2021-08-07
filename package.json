@@ -6,6 +6,7 @@
   "author": "Eric Liu (https://github.com/metonym)",
   "main": "./dist/vite-lib.umd.js",
   "module": "./dist/vite-lib.es.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/vite-lib.es.js",
@@ -14,8 +15,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "test:type-check": "tsc --noEmit",
-    "prepack": "vite build",
+    "prepack": "vite build && tsc",
     "preview": "vite preview"
   },
   "devDependencies": {
