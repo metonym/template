@@ -78,6 +78,13 @@ npx degit metonym/template#component-svelte svelte-component
 cd svelte-component && yarn
 ```
 
+- **[vite-lib-svelte](https://github.com/metonym/template/tree/vite-lib-svelte)**: Template for developing Svelte component libraries using [vite](https://github.com/vitejs/vite).
+
+```sh
+npx degit metonym/template#vite-lib-svelte my-vite-lib-svelte
+cd my-vite-lib-svelte && yarn
+```
+
 ### Plugins
 
 - **[plugin-posthtml](https://github.com/metonym/template/tree/plugin-posthtml)**: Develop PostHTML plugins written in TypeScript.
