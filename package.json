@@ -1,26 +1,22 @@
 {
-  "name": "vite-lib",
+  "name": "vite-lib-svelte",
   "version": "0.1.0",
   "license": "MIT",
   "description": "<< >>",
   "author": "Eric Liu (https://github.com/metonym)",
-  "main": "./dist/vite-lib.umd.js",
-  "module": "./dist/vite-lib.es.js",
-  "types": "./dist/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/vite-lib.es.js",
-      "require": "./dist/vite-lib.umd.js"
-    }
-  },
+  "main": "./src/index.js",
+  "svelte": "./src/index.js",
+  "types": "./types/index.d.ts",
   "scripts": {
     "dev": "vite",
-    "prepack": "vite build && tsc",
+    "prepack": "vite build && sveld",
     "preview": "vite preview"
   },
   "devDependencies": {
-    "typescript": "^4.3.5",
-    "vite": "^2.4.4"
+    "@sveltejs/vite-plugin-svelte": "next",
+    "sveld": "^0.8.3",
+    "svelte": "^3.42.4",
+    "vite": "^2.5.1"
   },
   "repository": {
     "type": "git",
@@ -32,6 +28,7 @@
     "vite"
   ],
   "files": [
-    "dist"
+    "src",
+    "types"
   ]
 }

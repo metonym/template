@@ -1,16 +1,5 @@
-import pkg from "./package.json";
+import { svelte } from '@sveltejs/vite-plugin-svelte';
 
 export default {
-  build: {
-    lib: {
-      entry: "src",
-      name: pkg.name
-        .split("-")
-        .map((t) => t.slice(0, 1).toUpperCase() + t.slice(1))
-        .join(""),
-    },
-    rollupOptions: {
-      external: Object.keys(pkg.dependencies || {}),
-    },
-  },
+  plugins: [svelte()],
 };

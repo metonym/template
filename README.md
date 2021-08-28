@@ -1,12 +1,12 @@
-# vite-lib
+# vite-lib-svelte
 
-> Template for bundling libraries with vite using "library" mode to support ES/UMD formats.
+> Template for developing and building Svelte component libraries using vite.
 
 ## Quick Start
 
 ```sh
-npx degit metonym/template#vite-lib vite-lib
-cd vite-lib
+npx degit metonym/template#vite-lib-svelte vite-lib-svelte
+cd vite-lib-svelte
 yarn
 ```
 
@@ -16,9 +16,9 @@ yarn
 
 Start the project in development mode.
 
-### `yarn test:type-check`
+### `yarn types`
 
-Vite uses esbuild to transpile TS to JS and does not type check code. Type check the code separately using `typescript`.
+Generates TypeScript definitions for Svelte files inside `src`.
 
 ### `yarn prepack`
 
