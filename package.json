@@ -9,7 +9,7 @@
   "types": "./types/index.d.ts",
   "scripts": {
     "dev": "vite",
-    "prepack": "vite build && sveld",
+    "prepack": "vite build & sveld",
     "preview": "vite preview",
     "test": "svelte-check --workspace test",
     "format": "prettier --write ."
