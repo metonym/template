@@ -28,6 +28,12 @@ yarn add -D component-svelte
 npm i -D component-svelte
 ```
 
+**pnpm**
+
+```bash
+pnpm i -D component-svelte
+```
+
 ## Usage
 
 ### Basic
