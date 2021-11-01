@@ -52,9 +52,9 @@ pnpm i -D component-svelte
 
 ### Props
 
-| Prop name | Type     | Default value |
-| :-------- | :------- | :------------ |
-| count     | `number` | `0`           |
+| Name  | Type     | Default value |
+| :---- | :------- | :------------ |
+| count | `number` | `0`           |
 
 ### Dispatched Events
 
