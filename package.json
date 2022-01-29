@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
-    "prepack": "svelte-kit package",
+    "package": "svelte-kit package",
     "preview": "svelte-kit preview",
     "validate": "svelte-check --tsconfig ./tsconfig.json",
     "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
@@ -17,13 +17,13 @@
     "@sveltejs/kit": "next",
     "mdsvex": "^0.9.8",
     "prettier": "^2.4.1",
-    "prettier-plugin-svelte": "^2.4.0",
-    "svelte": "^3.45.0",
-    "svelte-check": "^2.2.12",
-    "svelte-preprocess": "^4.10.1",
-    "svelte2tsx": "^0.4.13",
+    "prettier-plugin-svelte": "^2.6.0",
+    "svelte": "^3.46.3",
+    "svelte-check": "^2.3.0",
+    "svelte-preprocess": "^4.10.2",
+    "svelte2tsx": "^0.4.14",
     "tslib": "^2.3.1",
-    "typescript": "^4.4.3"
+    "typescript": "^4.5.5"
   },
   "repository": {
     "type": "git",
