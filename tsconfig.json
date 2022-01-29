@@ -13,7 +13,10 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "allowJs": true,
-    "checkJs": true
+    "checkJs": true,
+    "paths": {
+      "component-sveltekit": ["src"]
+    }
   },
-  "include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.svelte"]
+  "include": ["demo/*", "src/*"]
 }
