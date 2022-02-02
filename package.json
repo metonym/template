@@ -8,9 +8,8 @@
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "next",
-    "mdsvex": "^0.9.8",
-    "svelte": "^3.40.1",
-    "svelte-hmr": "^0.14.7",
-    "vite": "^2.4.3"
+    "mdsvex": "^0.10.5",
+    "svelte": "^3.46.3",
+    "vite": "^2.7.13"
   }
 }
