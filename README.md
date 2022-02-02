@@ -124,11 +124,18 @@ npx degit metonym/template#rollup-svelte my-rollup-svelte-app
 cd my-rollup-svelte-app && yarn
 ```
 
-- **[svite](https://github.com/metonym/template/tree/svite)**: Build Svelte apps with svite.
+- **[svite](https://github.com/metonym/template/tree/svite)**: Build Svelte apps with svite and MDsveX.
 
 ```sh
 npx degit metonym/template#svite my-svite-app
 cd my-svite-app && yarn
+```
+
+- **[vite-svelte](https://github.com/metonym/template/tree/vite-svelte)**: Build Svelte apps with vite.
+
+```sh
+npx degit metonym/template#vite-svelte my-vite-svelte-app
+cd my-vite-svelte-app && yarn
 ```
 
 - **[sveltekit-static](https://github.com/metonym/template/tree/sveltekit-static)**: Build static Svelte apps with SvelteKit and MDSveX.
