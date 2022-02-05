@@ -5,8 +5,8 @@
     "module": "CommonJS",
     "moduleResolution": "node",
     "outDir": "dist",
-    "strict": true
+    "strict": true,
+    "target": "ES6"
   },
-  "include": ["src/**/*"],
-  "exclude": ["src/tests"]
+  "include": ["src/**/*"]
 }
