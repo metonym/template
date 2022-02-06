@@ -4,10 +4,7 @@ export default {
   build: {
     lib: {
       entry: "src",
-      name: pkg.name
-        .split("-")
-        .map((t) => t.slice(0, 1).toUpperCase() + t.slice(1))
-        .join(""),
+      name: 'ViteLib',
     },
     rollupOptions: {
       external: Object.keys(pkg.dependencies || {}),
