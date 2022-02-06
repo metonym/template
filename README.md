@@ -17,13 +17,11 @@ yarn
 
 ## Available Scripts
 
-### `yarn test:tdd`
+### `yarn test`
 
 Write your app using test-driven development.
 
-### `yarn test`
-
-Runs tests once.
+The GitHub workflow executes `yarn test run` to only run tests once.
 
 ### `yarn prepack`
 
