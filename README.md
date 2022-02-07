@@ -87,6 +87,13 @@ cd my-vite-lib-svelte && yarn
 
 ### Plugins
 
+- **[vite-plugin](https://github.com/metonym/template/tree/vite-plugin)**: Template for developing plugins for [vite](https://github.com/vitejs/vite).
+
+```sh
+npx degit metonym/template#vite-plugin vite-plugin
+cd vite-plugin && yarn
+```
+
 - **[plugin-posthtml](https://github.com/metonym/template/tree/plugin-posthtml)**: Develop PostHTML plugins written in TypeScript.
 
 ```sh
