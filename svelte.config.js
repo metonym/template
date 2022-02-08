@@ -1,36 +1,19 @@
-import fs from "fs";
-import path from "path";
 import adapter from "@sveltejs/adapter-static";
-import preprocess from "svelte-preprocess";
-import { mdsvex } from "mdsvex";
+import { createConfig } from "sveldoc";
 
-const pkg = JSON.parse(fs.readFileSync(new URL('package.json', import.meta.url), 'utf8'));
-
-/** @type {import('@sveltejs/kit').Config} */
-const config = {
-  extensions: [".svelte", ".md"],
-  preprocess: [preprocess(), mdsvex({ extensions: [".md"] })],
+const config = await createConfig({
+  name: "component-sveltekit",
   kit: {
-    adapter: adapter(),
-    target: "#svelte",
-    files: {
-      lib: "src",
-      routes: "demo",
-      template: "demo/_app.html",
-    },
-    vite: {
-      resolve: {
-        alias: {
-          [pkg.name]: path.resolve('./src')
-        }
-      },
-      server: {
-        fs: {
-          allow: [".."],
-        },
-      },
+    paths: {
+      base: process.env.NODE_ENV === "production" ? "/component-sveltekit" : "",
     },
   },
-};
+  adapter: adapter(),
+  files: {
+    lib: "src",
+    routes: "demo",
+    template: "demo/_app.html",
+  },
+});
 
 export default config;
