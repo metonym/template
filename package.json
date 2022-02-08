@@ -33,10 +33,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/metonym/template"
+    "url": "https://github.com/metonym/component-sveltekit"
   },
-  "homepage": "https://github.com/metonym/template",
-  "bugs": "https://github.com/metonym/template/issues",
+  "homepage": "https://github.com/metonym/component-sveltekit",
+  "bugs": "https://github.com/metonym/component-sveltekit/issues",
   "keywords": [
     "svelte",
     "svelte component"
