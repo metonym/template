@@ -3,7 +3,7 @@
     "moduleResolution": "node",
     "module": "es2020",
     "lib": ["es2020", "DOM"],
-    "target": "es2020",
+    "target": "ESNext",
     "importsNotUsedAsValues": "error",
     "isolatedModules": true,
     "resolveJsonModule": true,
@@ -16,7 +16,8 @@
     "checkJs": true,
     "paths": {
       "component-sveltekit": ["src"]
-    }
+    },
+    "types": ["svelte"]
   },
-  "include": ["demo/*", "src/*"]
+  "include": ["demo/*", "src/*", "test/*"]
 }
