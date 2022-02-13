@@ -26,9 +26,11 @@ pnpm i -D component-sveltekit
 ```svelte
 <script>
   import { Button } from "component-sveltekit";
+
+  let count = 0;
 </script>
 
-<Button on:click={() => console.log("hello")}>Hello world</Button>
+<Button on:click={() => count++}>Hello world {count}</Button>
 
 ```
 
