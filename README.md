@@ -71,10 +71,17 @@ cd my-rollup-lib && yarn
 
 ### Components
 
-- **[component-svelte](https://github.com/metonym/template/tree/component-svelte)**: Develop Svelte components using a "README-driven development" approach.
+- **[component-svelte](https://github.com/metonym/template/tree/component-svelte)**: Develop Svelte components using a "README-driven development" approach with Rollup.
 
 ```sh
 npx degit metonym/template#component-svelte svelte-component
+cd svelte-component && yarn
+```
+
+- **[component-sveltekit](https://github.com/metonym/template/tree/component-sveltekit)**: Develop Svelte components using a "README-driven development" approach with SvelteKit.
+
+```sh
+npx degit metonym/template#component-sveltekit svelte-component
 cd svelte-component && yarn
 ```
 
