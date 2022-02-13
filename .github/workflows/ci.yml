@@ -21,7 +21,5 @@ jobs:
       - name: Build, test, and package the library
         run: |
           yarn
-          yarn build
-          yarn validate
-          yarn test run
+          yarn build & yarn run check & yarn test run
           yarn package
