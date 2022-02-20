@@ -85,6 +85,13 @@ npx degit metonym/template#component-sveltekit svelte-component
 cd svelte-component && yarn
 ```
 
+- **[component-library-sveltekit](https://github.com/metonym/template/tree/component-library-sveltekit)**: Develop Svelte components using a "README-driven development" approach with SvelteKit.
+
+```sh
+npx degit metonym/template#component-library-sveltekit svelte-component
+cd svelte-component && yarn
+```
+
 - **[vite-lib-svelte](https://github.com/metonym/template/tree/vite-lib-svelte)**: Template for developing Svelte component libraries using [vite](https://github.com/vitejs/vite).
 
 ```sh
