@@ -1,7 +1,7 @@
 import { test, expect, describe, afterEach, vi } from "vitest";
 import userEvent from "@testing-library/user-event";
 import { SvelteComponent, tick } from "svelte";
-import { Basic } from "./examples";
+import { Basic } from "../demo/exports";
 
 describe("ComponentSvelteKit", () => {
   let instance: SvelteComponent = null;
