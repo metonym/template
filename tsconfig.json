@@ -17,7 +17,8 @@
     "paths": {
       "component-sveltekit": ["src"]
     },
-    "types": ["svelte"]
+    "types": ["svelte"],
+    "strict": true
   },
   "include": ["demo/*", "src/*", "test/*"]
 }
