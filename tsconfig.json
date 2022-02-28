@@ -3,9 +3,8 @@
     "declaration": true,
     "esModuleInterop": true,
     "moduleResolution": "node",
-    "outDir": "lib",
+    "outDir": "dist",
     "strict": true
   },
-  "include": ["src"],
-  "exclude": ["src/*test.ts"]
+  "include": ["src/*.ts"]
 }

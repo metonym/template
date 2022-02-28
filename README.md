@@ -1,7 +1,5 @@
 # plugin-posthtml <img align="right" width="220" height="200" title="PostHTML logo" src="http://posthtml.github.io/posthtml/logo.svg">
 
-[![Build][build]][build-badge]
-
 > PostHTML plugin template.
 
 Brief description describing the purpose of the [PostHTML](https://github.com/posthtml/posthtml) plugin.
@@ -62,6 +60,3 @@ interface Options {
 ## License
 
 [MIT](LICENSE)
-
-[build]: https://travis-ci.com/metonym/template.svg?branch=plugin-posthtml
-[build-badge]: https://travis-ci.com/metonym/template

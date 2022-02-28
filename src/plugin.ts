@@ -1,10 +1,7 @@
-import PostHTML from "posthtml";
+import type PostHTML from "posthtml";
 
-function plugin(options?: {}) {
+export function plugin(options?: {}) {
   return function (tree: PostHTML.Node) {
     return tree;
   };
 }
-
-export default plugin;
-export { plugin };
