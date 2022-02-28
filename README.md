@@ -108,7 +108,7 @@ npx degit metonym/template#vite-plugin vite-plugin
 cd vite-plugin && yarn
 ```
 
-- **[plugin-posthtml](https://github.com/metonym/template/tree/plugin-posthtml)**: Develop PostHTML plugins written in TypeScript.
+- **[plugin-posthtml](https://github.com/metonym/template/tree/plugin-posthtml)**: Develop PostHTML plugins written in TypeScript. Test using vitest.
 
 ```sh
 npx degit metonym/template#plugin-posthtml posthtml-template
