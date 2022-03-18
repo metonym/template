@@ -5,7 +5,13 @@ const config = await createConfig({
   name: "component-library-sveltekit",
   kit: {
     paths: {
-      base: process.env.NODE_ENV === "production" ? "/component-library-sveltekit" : "",
+      base:
+        process.env.NODE_ENV === "production"
+          ? "/component-library-sveltekit"
+          : "",
+    },
+    prerender: {
+      default: true,
     },
   },
   adapter: adapter(),
