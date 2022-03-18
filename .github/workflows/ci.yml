@@ -23,5 +23,5 @@ jobs:
           yarn
           yarn build
           yarn validate
-          yarn test run
+          yarn test
           yarn package
