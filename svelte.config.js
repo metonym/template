@@ -7,6 +7,9 @@ const config = {
   preprocess: [mdsvex({ extensions: [".md"] })],
   kit: {
     adapter: adapter(),
+    prerender: {
+      default: true
+    }
   },
 };
 
