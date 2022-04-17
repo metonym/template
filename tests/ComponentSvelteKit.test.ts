@@ -1,6 +1,6 @@
-import { test, expect, describe, afterEach, vi } from "vitest";
+import { test, expect, describe, afterEach } from "vitest";
 import userEvent from "@testing-library/user-event";
-import { SvelteComponent, tick } from "svelte";
+import type { SvelteComponent } from "svelte";
 import { Basic } from "./examples";
 
 describe("ComponentSvelteKit", () => {
@@ -13,20 +13,11 @@ describe("ComponentSvelteKit", () => {
   });
 
   test("Basic", async () => {
-    document.body.innerHTML = `
-      <div id="target">
-      </div>
-    `;
-
-    const target = document.getElementById("target");
-
+    const target = document.body;
     instance = new Basic({ target, props: {} });
 
     expect(target.querySelector("button").innerHTML).toEqual("Hello world 0");
-
-    userEvent.click(target.querySelector("button"));
-    await tick();
-
+    await userEvent.click(target.querySelector("button"));
     expect(target.querySelector("button").innerHTML).toEqual("Hello world 1");
   });
 });
