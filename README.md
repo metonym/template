@@ -122,6 +122,13 @@ npx degit metonym/template#plugin-postcss postcss-template
 cd postcss-template && yarn
 ```
 
+- **[svelte-preprocessor](https://github.com/metonym/template/tree/svelte-preprocessor)**: Develop Svelte preprocessors using TypeScript and vitest.
+
+```sh
+npx degit metonym/template#svelte-preprocessor svelte-preprocess-name
+cd svelte-preprocess-name && yarn
+```
+
 ### Web apps
 
 - **[webpack-svelte](https://github.com/metonym/template/tree/webpack-svelte)**: Build Svelte apps with webpack.
