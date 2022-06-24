@@ -4,10 +4,8 @@ import { defineConfig } from "vite";
 import { ghPages } from "vite-plugin-gh-pages";
 
 export default defineConfig({
-  base: "/repo-name/",
   plugins: [
     svelte({
-      extensions: [".svelte"],
       preprocess: [
         {
           script: ({ content }) => {
