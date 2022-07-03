@@ -8,5 +8,5 @@
       "component-library-sveltekit": ["src"]
     }
   },
-  "include": ["demo/*", "src/*", "test/*"]
+  "include": ["demo", "src", "test"]
 }

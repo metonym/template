@@ -31,7 +31,6 @@ pnpm i -D component-library-sveltekit
 </script>
 
 <Button on:click={() => count++}>Hello world {count}</Button>
-
 ```
 
 <!-- example-end -->
