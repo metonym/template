@@ -1,17 +1,10 @@
 {
-  "name": "template-typescript",
-  "version": "0.1.0",
-  "license": "MIT",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "private": true,
   "scripts": {
-    "test": "tsnd src/tests",
-    "test:tdd": "tsnd --respawn --transpile-only src/tests",
-    "prepack": "tsc"
+    "test": "vitest"
   },
   "devDependencies": {
-    "@types/node": "^16.4.13",
-    "ts-node-dev": "^1.1.8",
-    "typescript": "^4.3.5"
+    "typescript": "^4.7.4",
+    "vitest": "^0.18.0"
   }
 }
