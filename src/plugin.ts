@@ -1,7 +1,7 @@
 import type PostHTML from "posthtml";
 
-export function plugin(options?: {}) {
-  return function (tree: PostHTML.Node) {
+export const plugin = (options?: {}) => {
+  return (tree: PostHTML.Node) => {
     return tree;
   };
-}
+};
