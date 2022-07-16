@@ -12,13 +12,17 @@ yarn
 
 ## Available Scripts
 
-### `yarn start`
+### `yarn dev`
 
 Start the app in development mode.
 
 ### `yarn build`
 
 Build the app for production.
+
+### `yarn preview`
+
+Preview the app locally.
 
 ## License
 

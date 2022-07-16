@@ -1,12 +1,5 @@
 <script>
-  import Button from "./Button.svelte";
-
-  let version = process.env.VERSION;
-  let count = 10;
+  let count = 0;
 </script>
 
-{count}
-
-{version}
-
-<Button bind:count>Increment the count</Button>
+<button on:click={() => count++}>Increment: {count}</button>
