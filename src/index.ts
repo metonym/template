@@ -1,9 +1,18 @@
 import { parse, walk } from "svelte/compiler";
 import MagicString from "magic-string";
 
-export const preprocessor: SveltePreprocessor<"markup"> = () => {
+interface Options {
+  ignore?: boolean;
+}
+
+export const preprocessor: SveltePreprocessor<"markup", Options> = (
+  options
+) => {
+  const ignore = options?.ignore === true;
+
   return {
     markup({ content, filename }) {
+      if (ignore) return;
       if (filename && /node_modules/.test(filename)) return;
 
       const ast = parse(content);
