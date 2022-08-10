@@ -48,7 +48,7 @@ export const preprocessor: SveltePreprocessor<"markup", Options> = (
         code: s.toString(),
         map: s.generateMap({
           source: filename,
-          includeContent: true,
+          hires: true,
         }),
       };
     },
