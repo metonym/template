@@ -1,0 +1,26 @@
+---
+import Button from "@components/Button.svelte";
+
+interface Frontmatter {
+  title?: string;
+}
+
+const posts = await Astro.glob<Frontmatter>("../pages/**/*.md");
+console.log(posts);
+---
+
+Hello world
+
+<Button client:visible />
+
+<a href="/about/">About</a>
+
+{
+  posts.map((post) => {
+    return (
+      <li>
+        <a href={post.url}>{post.frontmatter.title || post.url}</a>
+      </li>
+    );
+  })
+}
