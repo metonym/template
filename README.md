@@ -1,4 +1,4 @@
-# template-typescript
+# typescript
 
 > Minimal TypeScript template that uses vitest as a runner.
 
