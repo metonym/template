@@ -131,6 +131,13 @@ cd svelte-preprocess-name && yarn
 
 ### Web apps
 
+- **[astro-svelte](https://github.com/metonym/template/tree/astro-svelte)**: Build static sites with Astro and Svelte.
+
+```sh
+npx degit metonym/template#astro-svelte my-astro-svelte-app
+cd my-astro-svelte-app && yarn
+```
+
 - **[webpack-svelte](https://github.com/metonym/template/tree/webpack-svelte)**: Build Svelte apps with webpack.
 
 ```sh
