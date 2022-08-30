@@ -11,7 +11,7 @@
     "prepack": "tsc"
   },
   "dependencies": {
-    "magic-string": "^0.26.2"
+    "magic-string": "^0.26.3"
   },
   "devDependencies": {
     "svelte": "^3.49.0",
