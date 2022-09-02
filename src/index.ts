@@ -1,5 +1,6 @@
 import { parse, walk } from "svelte/compiler";
 import MagicString from "magic-string";
+import type { SveltePreprocessor } from "svelte/types/compiler/preprocess";
 
 interface Options {
   ignore?: boolean;
