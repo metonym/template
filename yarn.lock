@@ -245,10 +245,10 @@ loupe@^2.3.1:
   dependencies:
     get-func-name "^2.0.0"
 
-magic-string@^0.26.6:
-  version "0.26.6"
-  resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.26.6.tgz#b61e417c9f40b7b53bf7e73c0a803258e20d25ee"
-  integrity sha512-6d+3bFybzyQFJYSoRsl9ZC0wheze8M1LrQC7tNMRqXR4izUTDOLMd9BtSuExK9iAukFh+s5K0WAhc/dlQ+HKYA==
+magic-string@^0.26.7:
+  version "0.26.7"
+  resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.26.7.tgz#caf7daf61b34e9982f8228c4527474dac8981d6f"
+  integrity sha512-hX9XH3ziStPoPhJxLq1syWuZMxbDvGNbVchfrdCtanC7D13888bMFow61x8axrx+GfHLtVeAx2kxL7tTGRl+Ow==
   dependencies:
     sourcemap-codec "^1.4.8"
 
@@ -324,12 +324,12 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
-svelte@^3.50.1:
-  version "3.50.1"
-  resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.50.1.tgz#b35fbc5e79ddd71e8bb27c3149ee6ff903841239"
-  integrity sha512-bS4odcsdj5D5jEg6riZuMg5NKelzPtmsCbD9RG+8umU03TeNkdWnP6pqbCm0s8UQNBkqk29w/Bdubn3C+HWSwA==
+svelte@^3.52.0:
+  version "3.52.0"
+  resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.52.0.tgz#08259eff20904c63882b66a5d409a55e8c6743b8"
+  integrity sha512-FxcnEUOAVfr10vDU5dVgJN19IvqeHQCS1zfe8vayTfis9A2t5Fhx+JDe5uv/C3j//bB1umpLJ6quhgs9xyUbCQ==
 
-tinybench@^2.2.1:
+tinybench@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/tinybench/-/tinybench-2.3.0.tgz#febb2e697c735c0cdb8eb1e43cb1d2fa1821f983"
   integrity sha512-zs1gMVBwyyG2QbVchYIbnabRhMOCGvrwZz/q+SV+LIMa9q5YDQZi2kkI6ZRqV2Bz7ba1uvrc7ieUoE4KWnGeKg==
@@ -366,10 +366,10 @@ vite@^3.0.0:
   optionalDependencies:
     fsevents "~2.3.2"
 
-vitest@^0.24.0:
-  version "0.24.0"
-  resolved "https://registry.yarnpkg.com/vitest/-/vitest-0.24.0.tgz#61555b7b56e07f04a1692352de7d4803de0f5c88"
-  integrity sha512-k5j3FPTor+MJx2x0pDW2gtVk+s9VC6nSHT3SoqOIk9Je5fFpPgict+Xy2eAVXUogvSixs45Ya1oZk+oK93BO0w==
+vitest@^0.24.3:
+  version "0.24.3"
+  resolved "https://registry.yarnpkg.com/vitest/-/vitest-0.24.3.tgz#d91c7e2d557877d5270033efdf18add6063f0c97"
+  integrity sha512-aM0auuPPgMSstWvr851hB74g/LKaKBzSxcG3da7ejfZbx08Y21JpZmbmDYrMTCGhVZKqTGwzcnLMwyfz2WzkhQ==
   dependencies:
     "@types/chai" "^4.3.3"
     "@types/chai-subset" "^1.3.3"
@@ -378,7 +378,7 @@ vitest@^0.24.0:
     debug "^4.3.4"
     local-pkg "^0.4.2"
     strip-literal "^0.4.2"
-    tinybench "^2.2.1"
+    tinybench "^2.3.0"
     tinypool "^0.3.0"
     tinyspy "^1.0.2"
     vite "^3.0.0"
