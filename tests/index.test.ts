@@ -1,6 +1,6 @@
+import type { Processed } from "svelte/types/compiler/preprocess";
 import { expect, test } from "vitest";
 import * as API from "../src";
-import type { Processed } from "svelte/types/compiler/preprocess";
 
 test("API", () => {
   expect(Object.keys(API)).toMatchInlineSnapshot(`
