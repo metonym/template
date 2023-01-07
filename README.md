@@ -1,6 +1,6 @@
 # svelte-preprocess-name
 
-> Vite plugin
+> Svelte preprocessor
 
 ## Installation
 
@@ -18,13 +18,14 @@ pnpm i -D svelte-preprocess-name
 ## Usage
 
 ```js
-// vite.config.js
+// svelte.config.js
 import { defineConfig } from "vite";
-import { plugin } from "svelte-preprocess-name";
+import { name } from "svelte-preprocess-name";
 
-export default defineConfig({
-  plugins: [plugin()],
-});
+/** @type {import('@sveltejs/kit').Config} */
+export default {
+  preprocessors: [name()],
+};
 ```
 
 ## Changelog
