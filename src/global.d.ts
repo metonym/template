@@ -19,3 +19,14 @@ declare global {
 
   type AstNode = Element | ClassSelectorNode | SelectorNode;
 }
+
+declare module "svelte/compiler" {
+  import type { Node } from "estree";
+
+  export function walk(
+    ast: Node,
+    options: {
+      enter: (node: AstNode, parentNode: AstNode) => void;
+    }
+  ): void;
+}

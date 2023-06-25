@@ -12,6 +12,7 @@ export const preprocessor: SveltePreprocessor<"markup", Options> = (
   const ignore = options?.ignore === true;
 
   return {
+    name: "preprocess-name",
     markup({ content, filename }) {
       if (ignore) return;
       if (filename && /node_modules/.test(filename)) return;
@@ -24,7 +25,7 @@ export const preprocessor: SveltePreprocessor<"markup", Options> = (
         enter(node: AstNode, parent: AstNode) {
           if (node.type === "InlineComponent") {
             const class_attribute = node.attributes.find(
-              ({ type, name }: any) => type === "Attribute" && name === "class"
+              ({ type, name }) => type === "Attribute" && name === "class"
             );
 
             class_attribute?.value[0]?.raw
