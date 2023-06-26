@@ -22,7 +22,7 @@ export const preprocessor: SveltePreprocessor<"markup", Options> = (
       const class_names = new Set();
 
       walk(ast, {
-        enter(node: AstNode, parent: AstNode) {
+        enter(node, parent) {
           if (node.type === "InlineComponent") {
             const class_attribute = node.attributes.find(
               ({ type, name }) => type === "Attribute" && name === "class"
@@ -36,7 +36,7 @@ export const preprocessor: SveltePreprocessor<"markup", Options> = (
           }
 
           if (node.type === "ClassSelector" && class_names.has(node.name)) {
-            if ((parent as SelectorNode).children.length > 1) {
+            if ((parent.children ?? []).length > 1) {
               const selector = content.slice(parent.start, parent.end);
               s.overwrite(parent.start, parent.end, `:global(${selector})`);
             } else {

@@ -1,6 +1,5 @@
-import type { Element } from "svelte/types/compiler/interfaces";
-
-declare global {
+declare module "svelte/compiler" {
+  import type { Ast, Element } from "svelte/types/compiler/interfaces";
   interface ClassSelectorNode {
     type: "ClassSelector";
     name: string;
@@ -18,13 +17,9 @@ declare global {
   }
 
   type AstNode = Element | ClassSelectorNode | SelectorNode;
-}
-
-declare module "svelte/compiler" {
-  import type { Node } from "estree";
 
   export function walk(
-    ast: Node,
+    ast: Ast,
     options: {
       enter: (node: AstNode, parentNode: AstNode) => void;
     }
