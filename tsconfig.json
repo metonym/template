@@ -6,7 +6,6 @@
     "moduleResolution": "node",
     "outDir": "dist",
     "strict": true,
-    "skipLibCheck": true,
     "target": "ES6"
   },
   "include": ["src"]
