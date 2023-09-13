@@ -62,6 +62,13 @@ npx degit metonym/template#typescript-lib my-typescript-lib
 cd my-typescript-lib && yarn
 ```
 
+- **[bun-lib](https://github.com/metonym/template/tree/bun-lib)**: The same as the `bun-lib` template but using Bun instead of Yarn/Vitest.
+
+```sh
+npx degit metonym/template#bun-lib my-bun-lib
+cd my-bun-lib && yarn
+```
+
 - **[rollup-lib](https://github.com/metonym/template/tree/rollup-lib)**: Bundle projects with Rollup to support CJS, ES, UMD output formats.
 
 ```sh
