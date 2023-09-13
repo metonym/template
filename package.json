@@ -1,5 +1,5 @@
 {
-  "name": "template-typescript-lib",
+  "name": "bun-lib",
   "version": "0.1.0",
   "license": "MIT",
   "description": "<< >>",
@@ -7,13 +7,12 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "prepack": "tsc",
-    "test": "vitest"
+    "test": "bun test",
+    "prepack": "tsc --project tsconfig.build.json"
   },
   "devDependencies": {
-    "@types/node": "^20.6.0",
-    "typescript": "^5.2.2",
-    "vitest": "^0.34.4"
+    "bun-types": "^1.0.1",
+    "typescript": "^5.2.2"
   },
   "repository": {
     "type": "git",

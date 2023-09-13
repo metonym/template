@@ -1,10 +1,6 @@
-import { expect, test } from "vitest";
-import * as API from "../src";
+import { expect, test } from "bun:test";
+import { add } from "../src";
 
-test("API", () => {
-  expect(Object.keys(API)).toMatchInlineSnapshot(`
-    [
-      "add",
-    ]
-  `);
+test("add", () => {
+  expect(add(1, 2)).toEqual(3);
 });
