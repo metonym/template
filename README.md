@@ -136,6 +136,13 @@ npx degit metonym/template#svelte-preprocessor svelte-preprocess-name
 cd svelte-preprocess-name && yarn
 ```
 
+- **[svelte-preprocess-bun](https://github.com/metonym/template/tree/svelte-preprocess-bun)**: Develop Svelte preprocessors using TypeScript and bun.
+
+```sh
+npx degit metonym/template#svelte-preprocess-bun svelte-preprocess-name
+cd svelte-preprocess-name && yarn
+```
+
 ### Web apps
 
 - **[astro-svelte](https://github.com/metonym/template/tree/astro-svelte)**: Build static sites with Astro and Svelte.
