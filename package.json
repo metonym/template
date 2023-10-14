@@ -11,10 +11,10 @@
     "prepack": "tsc --project tsconfig.build.json"
   },
   "dependencies": {
-    "magic-string": "^0.30.3"
+    "magic-string": "^0.30.5"
   },
   "devDependencies": {
-    "bun-types": "^1.0.3",
+    "bun-types": "latest",
     "svelte": "^4.2.1",
     "typescript": "^5.2.2"
   },
