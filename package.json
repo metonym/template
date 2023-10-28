@@ -15,8 +15,8 @@
   },
   "devDependencies": {
     "bun-types": "latest",
-    "svelte": "^4.2.1",
-    "typescript": "^5.2.2"
+    "svelte": "latest",
+    "typescript": "latest"
   },
   "repository": {
     "type": "git",
