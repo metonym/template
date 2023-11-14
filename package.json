@@ -4,13 +4,14 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "format": "prettier --write . --ignore-path .gitignore"
   },
   "devDependencies": {
-    "@astrojs/prefetch": "^0.0.7",
-    "@astrojs/sitemap": "^1.0.0",
-    "@astrojs/svelte": "^1.0.0",
-    "astro": "^1.2.6",
-    "svelte": "^3.50.1"
+    "@astrojs/svelte": "^4.0.3",
+    "astro": "^3.5.3",
+    "prettier": "^3.1.0",
+    "svelte": "^4.2.3",
+    "typescript": "^5.2.2"
   }
 }

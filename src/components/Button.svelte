@@ -1,7 +1,9 @@
-<script>
-  export let count = 0;
+<script lang="ts">
+  export let count: number;
+
+  function handleClick() {
+    count += 1;
+  }
 </script>
 
-<button type="button" on:click={() => count++}>
-  Counter: {count}
-</button>
+<button on:click={handleClick}>Increment: {count}</button>
