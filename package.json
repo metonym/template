@@ -5,12 +5,13 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "format": "prettier --write . --ignore-path .gitignore"
+    "format": "prettier --write --plugin prettier-plugin-svelte . --ignore-path .gitignore"
   },
   "devDependencies": {
     "@astrojs/svelte": "^4.0.3",
     "astro": "^3.5.3",
     "prettier": "^3.1.0",
+    "prettier-plugin-svelte": "^3.1.0",
     "svelte": "^4.2.3",
     "typescript": "^5.2.2"
   }
