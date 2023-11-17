@@ -180,11 +180,18 @@ npx degit metonym/template#svite my-svite-app
 cd my-svite-app && yarn
 ```
 
-- **[vite-svelte](https://github.com/metonym/template/tree/vite-svelte)**: Build Svelte apps with vite.
+- **[vite-svelte](https://github.com/metonym/template/tree/vite-svelte)**: Build Svelte apps with Vite.
 
 ```sh
 npx degit metonym/template#vite-svelte my-vite-svelte-app
 cd my-vite-svelte-app && yarn
+```
+
+- **[vite-svelte-tailwind](https://github.com/metonym/template/tree/vite-svelte-tailwind)**: Build Svelte apps with Vite and Tailwind.
+
+```sh
+npx degit metonym/template#vite-svelte-tailwind my-vite-svelte-app
+cd my-vite-svelte-app && npm i
 ```
 
 - **[sveltekit-static](https://github.com/metonym/template/tree/sveltekit-static)**: Build static Svelte apps with SvelteKit and MDSveX.
