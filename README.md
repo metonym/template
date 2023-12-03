@@ -145,6 +145,13 @@ cd svelte-preprocess-name && yarn
 
 ### Web apps
 
+- **[astro-site](https://github.com/metonym/template/tree/astro-site)**: Build static sites with Astro and Svelte.
+
+```sh
+npx degit metonym/template#astro-site my-astro-site
+cd my-astro-site && npm install
+```
+
 - **[astro-svelte](https://github.com/metonym/template/tree/astro-svelte)**: Build static sites with Astro and Svelte.
 
 ```sh
