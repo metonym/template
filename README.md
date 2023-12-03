@@ -1,12 +1,12 @@
-# astro-svelte
+# astro-site
 
-> Template for building component libraries using Astro and Svelte.
+> Template for building websites using Astro and Svelte.
 
 ## Quick Start
 
 ```sh
-npx degit metonym/template#astro-svelte astro-svelte
-cd astro-svelte
+npx degit metonym/template#astro-site astro-site
+cd astro-site
 npm i
 ```
 

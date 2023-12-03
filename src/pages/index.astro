@@ -1,12 +1,12 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import Card from "@layouts/Card.svelte";
-import Button from "@src/components/Button.svelte";
+import Button from "@components/Button.svelte";
 ---
 
 <Layout title="Welcome to Astro!">
-  <Button count={0} client:idle />
-  <main>
+  <Button count={10} client:idle />
+  <main class="bg-slate-900">
     <svg
       class="astro-a"
       width="495"

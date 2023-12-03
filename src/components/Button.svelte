@@ -6,4 +6,4 @@
   }
 </script>
 
-<button on:click={handleClick}>Increment: {count}</button>
+<button class="bg-white" on:click={handleClick}>Increment: {count}</button>
