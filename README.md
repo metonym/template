@@ -1,4 +1,4 @@
-# svite
+# vite-svelte
 
 > Template for building Svelte apps with [@sveltejs/vite-plugin-svelte](https://github.com/sveltejs/vite-plugin-svelte).
 
