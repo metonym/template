@@ -4,21 +4,32 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "_postbuild": "purgecss --css dist/assets/*.css --content ./src/**/*{.svelte,.astro} --output dist/assets/",
+    "postbuild": "purgecss --css dist/assets/*.css --content ./src/**/*{.svelte,.astro} --output dist/assets/",
     "preview": "astro preview",
-    "format": "prettier --write --plugin prettier-plugin-svelte . --ignore-path .gitignore"
+    "astro": "astro",
+    "format": "prettier --write ."
   },
   "devDependencies": {
-    "@astrojs/svelte": "^4.0.4",
-    "@astrojs/tailwind": "^5.0.2",
-    "astro": "^3.6.4",
+    "@astrojs/svelte": "^5.0.0",
+    "@astrojs/tailwind": "^5.0.3",
+    "astro": "^4.0.3",
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.32",
     "prettier": "^3.1.0",
+    "prettier-plugin-astro": "^0.12.2",
     "prettier-plugin-svelte": "^3.1.2",
     "purgecss": "^5.0.0",
     "svelte": "^4.2.8",
     "tailwindcss": "^3.3.5",
     "typescript": "^5.3.2"
+  },
+  "prettier": {
+    "plugins": [
+      "prettier-plugin-svelte",
+      "prettier-plugin-astro"
+    ]
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^2.0.0"
   }
 }
