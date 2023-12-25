@@ -5,7 +5,7 @@
 ## Quick Start
 
 ```sh
-npx degit metonym/template#vite-svelte svelte-app
+npx degit metonym/template#vite-svelte-tailwind svelte-app
 cd svelte-app
 yarn
 ```
