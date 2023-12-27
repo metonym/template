@@ -14,7 +14,7 @@
     "magic-string": "^0.30.5"
   },
   "devDependencies": {
-    "bun-types": "latest",
+    "@types/bun": "latest",
     "svelte": "latest",
     "typescript": "latest"
   },
