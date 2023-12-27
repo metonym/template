@@ -12,6 +12,7 @@
     "@astrojs/mdx": "^2.0.0",
     "@astrojs/svelte": "^5.0.3",
     "@astrojs/tailwind": "^5.1.0",
+    "@types/node": "^20.10.5",
     "astro": "^4.0.8",
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.32",
