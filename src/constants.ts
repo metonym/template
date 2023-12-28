@@ -1,3 +1,3 @@
-export const SHA: string = process.env.SHA;
+export const SHA = process.env.SHA as string;
 
-export const TS: string = process.env.TS;
+export const TS = process.env.TS as string;

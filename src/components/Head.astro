@@ -1,0 +1,14 @@
+---
+import { SHA } from "@src/constants";
+import { ViewTransitions } from "astro:transitions";
+
+const PROD = import.meta.env.PROD;
+---
+
+<ViewTransitions transition:animate="none" />
+
+<script async defer define:vars={{ SHA, PROD }}>
+  if (PROD) {
+    console.log("Version", SHA);
+  }
+</script>

@@ -15,6 +15,7 @@
     "@types/node": "^20.10.5",
     "astro": "^4.0.8",
     "autoprefixer": "^10.4.16",
+    "nanostores": "^0.9.5",
     "postcss": "^8.4.32",
     "prettier": "^3.1.1",
     "prettier-plugin-astro": "^0.12.2",

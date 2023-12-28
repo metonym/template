@@ -1,11 +1,9 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import Card from "@layouts/Card.svelte";
-import Button from "@components/Button.svelte";
 ---
 
 <Layout title="Welcome to Astro!">
-  <Button count={10} client:idle />
   <main class="bg-slate-900">
     <svg
       class="astro-a"
@@ -41,6 +39,9 @@ import Button from "@components/Button.svelte";
       />
       <strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message
       above.
+
+      <br />
+      <a href="/about">About</a>
     </p>
     <ul role="list" class="link-card-grid">
       <Card

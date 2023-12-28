@@ -1,14 +1,11 @@
 <script lang="ts">
-  import { SHA, TS } from "@src/constants";
+  import { TS } from "@src/constants";
+  import { current_count } from "@src/store";
 
-  export let count: number;
-
-  if (import.meta.env.PROD) {
-    console.log("Version", SHA);
-  }
+  let count: number = $current_count;
 
   function handleClick() {
-    count += 10;
+    count += 1;
   }
 
   const date = new Date(Date.parse(TS));

@@ -1,5 +1,6 @@
 ---
 import type { MarkdownLayoutProps } from "astro";
+import Head from '@components/Head.astro';
 
 type Props = MarkdownLayoutProps<{
   // Define frontmatter props here
@@ -13,6 +14,7 @@ const { frontmatter } = Astro.props;
 
 <html lang="en">
   <head>
+    <Head />
     <style>
       main {
         width: calc(100% - 2em);
