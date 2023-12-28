@@ -1,4 +1,5 @@
 import mdx from "@astrojs/mdx";
+import sitemap from "@astrojs/sitemap";
 import svelte, { vitePreprocess } from "@astrojs/svelte";
 import tailwind from "@astrojs/tailwind";
 import { defineConfig } from "astro/config";
@@ -7,6 +8,7 @@ import { execSync } from "node:child_process";
 const GIT_SHA = execSync("git rev-parse HEAD").toString().trim().slice(0, 7);
 
 export default defineConfig({
+  site: "https://astro.build",
   vite: {
     define: {
       "process.env.SHA": JSON.stringify(GIT_SHA),
@@ -19,5 +21,6 @@ export default defineConfig({
     }),
     tailwind(),
     mdx(),
+    sitemap(),
   ],
 });
