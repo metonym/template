@@ -2,15 +2,14 @@
 import { SHA } from "@src/constants";
 import { ViewTransitions } from "astro:transitions";
 
-const PROD = import.meta.env.PROD;
+const canonical_url = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <link rel="sitemap" href="/sitemap-index.xml" />
+<link rel="canonical" href={canonical_url} />
 
 <ViewTransitions transition:animate="none" />
 
-<script async defer define:vars={{ SHA, PROD }}>
-  if (PROD) {
-    console.log("Version", SHA);
-  }
+<script async defer define:vars={{ SHA }}>
+  console.log("Version", SHA);
 </script>

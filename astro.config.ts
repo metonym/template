@@ -8,7 +8,15 @@ import { execSync } from "node:child_process";
 const GIT_SHA = execSync("git rev-parse HEAD").toString().trim().slice(0, 7);
 
 export default defineConfig({
-  site: "https://astro.build",
+  trailingSlash: "always",
+  site: "https://astro.build/",
+  prefetch: {
+    defaultStrategy: "viewport",
+    prefetchAll: true,
+  },
+  build: {
+    assets: "_",
+  },
   vite: {
     define: {
       "process.env.SHA": JSON.stringify(GIT_SHA),
