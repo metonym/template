@@ -2,7 +2,8 @@
 import { SHA } from "@src/constants";
 import { ViewTransitions } from "astro:transitions";
 
-const canonical_url = new URL(Astro.url.pathname, Astro.site);
+const url = new URL(Astro.url.pathname.replace(/\/$/, ""), Astro.site);
+const canonical_url = url.href.replace(/\.html$/, "");
 ---
 
 <link rel="sitemap" href="/sitemap-index.xml" />

@@ -8,7 +8,7 @@ import { execSync } from "node:child_process";
 const GIT_SHA = execSync("git rev-parse HEAD").toString().trim().slice(0, 7);
 
 export default defineConfig({
-  trailingSlash: "always",
+  trailingSlash: "never",
   site: "https://astro.build/",
   prefetch: {
     defaultStrategy: "viewport",
@@ -16,6 +16,7 @@ export default defineConfig({
   },
   build: {
     assets: "_",
+    format: "file",
   },
   vite: {
     define: {
