@@ -1,6 +1,6 @@
 ---
-import { SHA } from "@src/constants";
 import { ViewTransitions } from "astro:transitions";
+import Version from "@components/Version.astro";
 
 const url = new URL(Astro.url.pathname.replace(/\/$/, ""), Astro.site);
 const canonical_url = url.href.replace(/\.html$/, "");
@@ -10,7 +10,4 @@ const canonical_url = url.href.replace(/\.html$/, "");
 <link rel="canonical" href={canonical_url} />
 
 <ViewTransitions transition:animate="none" />
-
-<script async defer define:vars={{ SHA }}>
-  console.log("Version", SHA);
-</script>
+<Version />
