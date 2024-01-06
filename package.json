@@ -11,8 +11,8 @@
     "prepack": "tsc --project tsconfig.build.json"
   },
   "devDependencies": {
-    "bun-types": "latest",
-    "typescript": "latest"
+    "@types/bun": "latest",
+    "typescript": "^5.3.3"
   },
   "repository": {
     "type": "git",
