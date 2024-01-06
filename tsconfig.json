@@ -3,8 +3,7 @@
     "lib": ["ESNext"],
     "moduleResolution": "node",
     "skipLibCheck": true,
-    "strict": true,
-    "types": ["bun-types"]
+    "strict": true
   },
   "include": ["src/**/*", "tests/**/*"]
 }
