@@ -1,12 +1,18 @@
 {
   "extends": "astro/tsconfigs/strictest",
   "compilerOptions": {
+    "target": "ES2021",
+    "module": "ES2022",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
     "strictNullChecks": true,
     "baseUrl": ".",
     "paths": {
-      "@src/*": ["src/*"],
-      "@components/*": ["src/components/*"],
-      "@layouts/*": ["src/layouts/*"]
-    }
-  }
+      "@frontend/*": ["frontend/*"],
+      "@components/*": ["frontend/components/*"],
+      "@layouts/*": ["frontend/layouts/*"],
+    },
+  },
 }

@@ -1,6 +1,13 @@
 <script lang="ts">
-  import { TS } from "@src/constants";
-  import { current_count } from "@src/store";
+  import { TS } from "@frontend/constants";
+  import { current_count } from "@frontend/store";
+  import { onMount } from "svelte";
+
+  onMount(() => {
+    fetch("/api/hello")
+      .then((res) => res.json())
+      .then((data) => console.log(data));
+  });
 
   let count: number = $current_count;
 

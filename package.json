@@ -2,6 +2,8 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "start": "bun server/app.ts",
+    "dev:server": "bun --hot server/app.ts",
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
@@ -10,22 +12,24 @@
   },
   "dependencies": {
     "@astrojs/mdx": "^2.1.1",
-    "@astrojs/sitemap": "^3.0.5",
     "@astrojs/svelte": "^5.0.3",
     "@astrojs/tailwind": "^5.1.0",
+    "@elysiajs/cors": "^0.8.0",
+    "@elysiajs/static": "^0.8.1",
     "astro": "^4.3.1",
     "autoprefixer": "^10.4.16",
+    "elysia": "^0.8.15",
     "nanostores": "^0.9.5",
     "postcss": "^8.4.32",
     "svelte": "^4.2.8",
     "tailwindcss": "^3.4.1"
   },
   "devDependencies": {
-    "@types/node": "^20.10.5",
-    "prettier": "^3.1.1",
-    "prettier-plugin-astro": "^0.12.2",
-    "prettier-plugin-svelte": "^3.1.2",
-    "typescript": "^5.3.3"
+    "@types/bun": "latest",
+    "prettier": "latest",
+    "prettier-plugin-astro": "latest",
+    "prettier-plugin-svelte": "latest",
+    "typescript": "latest"
   },
   "prettier": {
     "plugins": [
