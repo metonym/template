@@ -145,6 +145,13 @@ cd svelte-preprocess-name && yarn
 
 ### Web apps
 
+- **[astro-bun](https://github.com/metonym/template/tree/astro-bun)**: Build a full stack website using Bun, Astro, and Elysia.
+
+```sh
+npx degit metonym/template#astro-bun my-astro-bun
+cd my-bun-site && bun install
+```
+
 - **[astro-site](https://github.com/metonym/template/tree/astro-site)**: Build static sites with Astro and Svelte.
 
 ```sh
