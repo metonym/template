@@ -2,4 +2,4 @@
 /// <reference types="astro/client" />
 
 declare const __SHA: string;
-declare const __TS: number;
+declare const __TS: string;

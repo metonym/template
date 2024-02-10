@@ -13,8 +13,8 @@ export default defineConfig({
     defaultStrategy: "viewport",
     prefetchAll: true,
   },
-  srcDir: "./frontend",
-  publicDir: "./frontend/public",
+  srcDir: "./client",
+  publicDir: "./client/public",
   build: {
     assets: "_",
     format: "directory",

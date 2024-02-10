@@ -10,9 +10,9 @@
     "strictNullChecks": true,
     "baseUrl": ".",
     "paths": {
-      "@frontend/*": ["frontend/*"],
-      "@components/*": ["frontend/components/*"],
-      "@layouts/*": ["frontend/layouts/*"],
+      "@client/*": ["client/*"],
+      "@components/*": ["client/components/*"],
+      "@layouts/*": ["client/layouts/*"],
     },
   },
 }

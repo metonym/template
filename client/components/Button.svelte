@@ -1,6 +1,6 @@
 <script lang="ts">
-  import { TS } from "@frontend/constants";
-  import { current_count } from "@frontend/store";
+  import { TS } from "@client/constants";
+  import { current_count } from "@client/store";
   import { onMount } from "svelte";
 
   onMount(() => {
