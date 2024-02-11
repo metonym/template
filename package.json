@@ -2,25 +2,19 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "bun server/app.ts",
+    "start": "NODE_ENV=production bun server/app.ts",
     "dev:server": "bun --hot server/app.ts",
-    "dev:client": "astro dev",
-    "build:client": "astro build",
-    "preview": "astro preview",
-    "astro": "astro",
+    "dev:client": "vite dev",
+    "build:client": "vite build",
     "format": "prettier --write ."
   },
   "dependencies": {
-    "@astrojs/mdx": "^2.1.1",
-    "@astrojs/svelte": "^5.0.3",
-    "@astrojs/tailwind": "^5.1.0",
     "@elysiajs/cors": "^0.8.0",
     "@elysiajs/static": "^0.8.1",
     "@elysiajs/trpc": "^0.8.0",
-    "@elysiajs/websocket": "^0.2.8",
+    "@tanstack/svelte-query": "^5.18.1",
     "@trpc/client": "^10.45.1",
     "@trpc/server": "^10.45.1",
-    "astro": "^4.3.5",
     "autoprefixer": "^10.4.16",
     "elysia": "^0.8.16",
     "postcss": "^8.4.32",
@@ -30,14 +24,13 @@
   "devDependencies": {
     "@types/bun": "latest",
     "prettier": "latest",
-    "prettier-plugin-astro": "latest",
     "prettier-plugin-svelte": "latest",
-    "typescript": "latest"
+    "typescript": "latest",
+    "vite": "^5.1.1"
   },
   "prettier": {
     "plugins": [
-      "prettier-plugin-svelte",
-      "prettier-plugin-astro"
+      "prettier-plugin-svelte"
     ]
   },
   "postcss": {

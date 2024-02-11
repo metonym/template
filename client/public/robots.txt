@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://astro.build/sitemap-index.xml
