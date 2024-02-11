@@ -1,35 +1,25 @@
-import { staticPlugin } from "@elysiajs/static";
-import { compile as c, trpc } from "@elysiajs/trpc";
-import { initTRPC } from "@trpc/server";
-import { Elysia, t as T } from "elysia";
-import { PORT } from "./constants";
+import { trpcServer } from "@hono/trpc-server";
+import { Hono } from "hono";
+import { serveStatic } from "hono/bun";
+import { logger } from "hono/logger";
+import { secureHeaders } from "hono/secure-headers";
+import { NODE_ENV, PORT } from "./constants";
+import { router } from "./trpc-router";
 
-const t = initTRPC.create();
-const p = t.procedure;
-const router = t.router({
-  greet: p.input(c(T.String())).query(({ input }) => {
-    return {
-      message: `Hello, ${input}!`,
-    };
-  }),
-});
+const app = new Hono();
 
-export type AppRouter = typeof router;
-
-const app = new Elysia();
-
-if (import.meta.env.NODE_ENV === "production") {
-  app.use(
-    staticPlugin({
-      assets: "dist",
-      prefix: "/",
-      indexHTML: true,
-    }),
-  );
+if (NODE_ENV === "production") {
+  app
+    .use(secureHeaders())
+    .use(logger())
+    .use("/*", serveStatic({ root: "./dist" }));
 }
 
-app.use(trpc(router, { endpoint: "/api" })).listen(PORT, () => {
-  console.log(
-    `[${import.meta.env.NODE_ENV}] Serving http://${app.server?.hostname}:${app.server?.port}`,
-  );
-});
+app.use("/api/*", trpcServer({ router }));
+
+console.log(`[${NODE_ENV}] Running at http://localhost:${PORT}`);
+
+export default {
+  port: PORT,
+  fetch: app.fetch,
+};

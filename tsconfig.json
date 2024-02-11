@@ -1,5 +1,4 @@
 {
-  "extends": "astro/tsconfigs/strictest",
   "compilerOptions": {
     "target": "ES2021",
     "module": "ES2022",
@@ -11,7 +10,8 @@
     "baseUrl": ".",
     "paths": {
       "@client/*": ["client/*"],
-      "@components/*": ["client/components/*"],
-    },
+      "@components/*": ["client/components/*"]
+    }
   },
+  "include": ["client/**/*", "server/**/*"]
 }
