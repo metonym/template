@@ -1,3 +1,5 @@
-export const SHA = process.env.SHA as string;
+export const TS = __TS;
 
-export const TS = process.env.TS as string;
+export const SHA = __SHA;
+
+export const SITE_URL = import.meta.env.SITE_URL;

@@ -10,22 +10,22 @@
   },
   "dependencies": {
     "@astrojs/mdx": "^2.1.1",
-    "@astrojs/sitemap": "^3.0.5",
-    "@astrojs/svelte": "^5.0.3",
+    "@astrojs/sitemap": "^3.1.1",
+    "@astrojs/svelte": "^5.2.0",
     "@astrojs/tailwind": "^5.1.0",
-    "astro": "^4.3.1",
-    "autoprefixer": "^10.4.16",
-    "nanostores": "^0.9.5",
-    "postcss": "^8.4.32",
-    "svelte": "^4.2.8",
+    "astro": "^4.4.15",
+    "autoprefixer": "^10.4.18",
+    "nanostores": "^0.10.0",
+    "postcss": "^8.4.35",
+    "svelte": "^4.2.12",
     "tailwindcss": "^3.4.1"
   },
   "devDependencies": {
-    "@types/node": "^20.10.5",
-    "prettier": "^3.1.1",
-    "prettier-plugin-astro": "^0.12.2",
-    "prettier-plugin-svelte": "^3.1.2",
-    "typescript": "^5.3.3"
+    "@types/node": "^20.11.25",
+    "prettier": "^3.2.5",
+    "prettier-plugin-astro": "^0.13.0",
+    "prettier-plugin-svelte": "^3.2.2",
+    "typescript": "^5.4.2"
   },
   "prettier": {
     "plugins": [

@@ -20,8 +20,8 @@ export default defineConfig({
   },
   vite: {
     define: {
-      "process.env.SHA": JSON.stringify(GIT_SHA),
-      "process.env.TS": JSON.stringify(new Date()),
+      __SHA: JSON.stringify(GIT_SHA),
+      __TS: JSON.stringify(new Date()),
     },
   },
   integrations: [
