@@ -1,10 +1,6 @@
-import { svelte, vitePreprocess } from "@sveltejs/vite-plugin-svelte";
+import react from "@vitejs/plugin-react";
 import type { UserConfig } from "vite";
 
 export default {
-  plugins: [
-    svelte({
-      preprocess: vitePreprocess(),
-    }),
-  ],
+  plugins: [react()],
 } satisfies UserConfig;
