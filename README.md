@@ -5,14 +5,17 @@
 ## Installation
 
 ```bash
-# Yarn
-yarn add -D svelte-preprocess-name
-
 # NPM
 npm i -D svelte-preprocess-name
 
 # pnpm
 pnpm i -D svelte-preprocess-name
+
+# Yarn
+yarn add -D svelte-preprocess-name
+
+# Bun
+bun add -D svelte-preprocess-name
 ```
 
 ## Usage
