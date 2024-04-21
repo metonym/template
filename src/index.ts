@@ -1,5 +1,5 @@
 import MagicString from "magic-string";
-import { parse, walk, type ANode } from "svelte/compiler";
+import { parse, walk } from "svelte/compiler";
 import type { SveltePreprocessor } from "svelte/types/compiler/preprocess";
 
 interface Options {
@@ -25,8 +25,7 @@ export const preprocessor: SveltePreprocessor<"markup", Options> = (
         enter(node, parent) {
           if (node.type === "InlineComponent") {
             const class_attribute = node.attributes.find(
-              ({ type, name }: ANode) =>
-                type === "Attribute" && name === "class"
+              ({ type, name }) => type === "Attribute" && name === "class"
             );
 
             class_attribute?.value[0]?.raw

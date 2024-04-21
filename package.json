@@ -8,10 +8,10 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "test": "bun test",
-    "build": "tsc --project tsconfig.build.json"
+    "build": "bun --bun tsc --project tsconfig.build.json"
   },
   "dependencies": {
-    "magic-string": "^0.30.9"
+    "magic-string": "^0.30.10"
   },
   "devDependencies": {
     "@types/bun": "latest",
