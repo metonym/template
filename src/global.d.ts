@@ -66,10 +66,17 @@ declare module "svelte/compiler" {
     | Class
     | Attribute;
 
+  type WalkerFn = (
+    this: { skip: () => void },
+    node: AstNode,
+    parentNode: AstNode
+  ) => void;
+
   export function walk(
-    ast: Ast,
+    ast: Ast | Script,
     options: {
-      enter: (node: AstNode, parentNode: AstNode) => void;
+      enter?: WalkerFn;
+      leave?: WalkerFn;
     }
   ): void;
 }
