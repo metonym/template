@@ -1,10 +1,10 @@
 <script lang="ts">
-  import SayHello from "./SayHello.svelte";
+  import Query from "@components/Query.svelte";
 
   let toggle = true;
 </script>
 
 {#if toggle}
-  <SayHello />
+  <Query />
 {/if}
 <button on:click={() => (toggle = !toggle)}>Toggle</button>
