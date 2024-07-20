@@ -6,26 +6,27 @@
     "dev:server": "bun --hot server/app.ts",
     "dev:client": "vite dev",
     "build:client": "vite build",
-    "format": "bun --bun prettier --write .  --cache"
+    "format": "bun --bun prettier --write . --cache"
   },
   "dependencies": {
     "@hono/trpc-server": "^0.1.1",
-    "@tanstack/svelte-query": "^5.51.9",
+    "@sveltejs/vite-plugin-svelte": "^3.1.1",
+    "@tanstack/svelte-query": "^5.51.21",
     "@trpc/client": "^10.45.2",
     "@trpc/server": "^10.45.2",
-    "autoprefixer": "^10.4.19",
-    "hono": "^4.5.0",
-    "postcss": "^8.4.39",
+    "autoprefixer": "^10.4.20",
+    "hono": "^4.5.3",
+    "postcss": "^8.4.40",
     "svelte": "^4.2.18",
-    "tailwindcss": "^3.4.6",
+    "tailwindcss": "^3.4.7",
     "zod": "^3.23.8"
   },
   "devDependencies": {
     "@types/bun": "^1.1.6",
     "prettier": "^3.3.3",
     "prettier-plugin-svelte": "^3.2.6",
-    "typescript": "^5.5.3",
-    "vite": "^5.3.4"
+    "typescript": "^5.5.4",
+    "vite": "^5.3.5"
   },
   "prettier": {
     "plugins": [
