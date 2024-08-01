@@ -7,20 +7,20 @@
 ```sh
 npx degit metonym/template#vite-react-tailwind svelte-app
 cd svelte-app
-yarn
+bun i
 ```
 
 ## Available Scripts
 
-### `yarn dev`
+### `bun dev`
 
 Start the app in development mode.
 
-### `yarn build`
+### `bun run build`
 
 Build the app for production.
 
-### `yarn preview`
+### `bun preview`
 
 Preview the app locally.
 
