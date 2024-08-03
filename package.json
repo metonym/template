@@ -5,8 +5,8 @@
     "start": "NODE_ENV=production bun server/app.ts",
     "dev:server": "bun --hot server/app.ts",
     "dev:client": "vite dev",
-    "build:client": "vite build",
-    "format": "bun --bun prettier --write . --cache"
+    "build": "vite build",
+    "format": "bun --bun biome format --write ."
   },
   "dependencies": {
     "@hono/trpc-server": "^0.1.1",
@@ -22,16 +22,10 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.8.3",
     "@types/bun": "^1.1.6",
-    "prettier": "^3.3.3",
-    "prettier-plugin-svelte": "^3.2.6",
     "typescript": "^5.5.4",
     "vite": "^5.3.5"
-  },
-  "prettier": {
-    "plugins": [
-      "prettier-plugin-svelte"
-    ]
   },
   "postcss": {
     "plugins": {

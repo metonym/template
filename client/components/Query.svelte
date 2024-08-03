@@ -1,12 +1,12 @@
 <script lang="ts">
-  import { createQuery } from "@tanstack/svelte-query";
-  import { trpcClient } from "@client/api-client";
+import { createQuery } from "@tanstack/svelte-query";
+import { trpcClient } from "@client/api-client";
 
-  $: query = createQuery({
-    queryKey: ["todos"],
-    queryFn: () => trpcClient.greet.query("query"),
-    staleTime: Infinity,
-  });
+$: query = createQuery({
+  queryKey: ["todos"],
+  queryFn: () => trpcClient.greet.query("query"),
+  staleTime: Number.POSITIVE_INFINITY,
+});
 </script>
 
 <div class="font-semibold">
