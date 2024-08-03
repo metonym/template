@@ -1,36 +1,17 @@
 {
   "private": true,
-  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "start": "NODE_ENV=production bun server/app.ts",
-    "dev:server": "bun --hot server/app.ts",
-    "dev:client": "vite dev",
-    "build": "vite build",
-    "format": "bun --bun biome format --write ."
-  },
-  "dependencies": {
-    "@hono/trpc-server": "^0.1.1",
-    "@sveltejs/vite-plugin-svelte": "^3.1.1",
-    "@tanstack/svelte-query": "^5.51.21",
-    "@trpc/client": "^10.45.2",
-    "@trpc/server": "^10.45.2",
-    "autoprefixer": "^10.4.20",
-    "hono": "^4.5.3",
-    "postcss": "^8.4.40",
-    "svelte": "^4.2.18",
-    "tailwindcss": "^3.4.7",
-    "zod": "^3.23.8"
+    "start": "bun run --filter server start",
+    "dev": "bun --filter '*' dev",
+    "build": "bun --filter '*' build",
+    "typecheck": "bunx tsc --noEmit",
+    "format": "bunx biome format --write packages"
   },
   "devDependencies": {
     "@biomejs/biome": "1.8.3",
-    "@types/bun": "^1.1.6",
-    "typescript": "^5.5.4",
-    "vite": "^5.3.5"
-  },
-  "postcss": {
-    "plugins": {
-      "tailwindcss": {},
-      "autoprefixer": {}
-    }
+    "typescript": "^5.5.4"
   }
 }

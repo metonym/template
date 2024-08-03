@@ -3,6 +3,10 @@ import path from "node:path";
 import type { UserConfig } from "vite";
 
 export default {
+  build: {
+    emptyOutDir: true,
+    outDir: "../server/dist",
+  },
   plugins: [
     svelte({
       preprocess: vitePreprocess(),
@@ -20,8 +24,8 @@ export default {
   },
   resolve: {
     alias: {
-      "@client": path.resolve("client"),
-      "@components": path.resolve("client/components"),
+      "@": path.resolve("src"),
+      "@components": path.resolve("src/components"),
     },
   },
 } satisfies UserConfig;

@@ -15,11 +15,10 @@ if (NODE_ENV === "production") {
     .use(csrf({ origin: new URL(SITE_URL).host }))
     .use(logger())
     .use("/*", serveStatic({ root: "./dist" }));
+  console.log(NODE_ENV, SITE_URL);
 }
 
 app.use("/api/*", trpcServer({ router }));
-
-console.log(`[${NODE_ENV}] Running at http://localhost:${PORT}`);
 
 export default {
   port: PORT,

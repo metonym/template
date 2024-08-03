@@ -7,11 +7,6 @@
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
     "strictNullChecks": true,
-    "baseUrl": ".",
-    "paths": {
-      "@client/*": ["client/*"],
-      "@components/*": ["client/components/*"]
-    }
   },
-  "include": ["client/**/*", "server/**/*"]
+  "include": ["packages/**/*"]
 }

@@ -1,6 +1,6 @@
 <script lang="ts">
 import { createQuery } from "@tanstack/svelte-query";
-import { trpcClient } from "@client/api-client";
+import { trpcClient } from "@/api-client";
 
 $: query = createQuery({
   queryKey: ["todos"],
@@ -9,7 +9,7 @@ $: query = createQuery({
 });
 </script>
 
-<div class="font-semibold">
+<div class="font-semibold text-slate-500">
   {#if $query.isLoading}
     <p>Loading...</p>
   {:else if $query.isError}

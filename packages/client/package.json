@@ -1,0 +1,30 @@
+{
+  "name": "client",
+  "type": "module",
+  "scripts": {
+    "start": "NODE_ENV=production bun server/app.ts",
+    "dev": "vite dev",
+    "build": "vite build",
+    "format": "bun --bun biome format --write ."
+  },
+  "dependencies": {
+    "@sveltejs/vite-plugin-svelte": "^3.1.1",
+    "@tanstack/svelte-query": "^5.51.21",
+    "@trpc/client": "^10.45.2",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.40",
+    "svelte": "^4.2.18",
+    "tailwindcss": "^3.4.7"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.1.6",
+    "typescript": "^5.5.4",
+    "vite": "^5.3.5"
+  },
+  "postcss": {
+    "plugins": {
+      "tailwindcss": {},
+      "autoprefixer": {}
+    }
+  }
+}
