@@ -9,6 +9,7 @@
     "indentStyle": "space"
   },
   "linter": {
+    "ignore": ["dist"],
     "enabled": true,
     "rules": {
       "recommended": true

@@ -1,6 +1,6 @@
 <script lang="ts">
-import { QueryClient, QueryClientProvider } from "@tanstack/svelte-query";
 import Query from "@components/Query.svelte";
+import { QueryClient, QueryClientProvider } from "@tanstack/svelte-query";
 
 const queryClient = new QueryClient();
 </script>

@@ -1,5 +1,5 @@
-import { svelte, vitePreprocess } from "@sveltejs/vite-plugin-svelte";
 import path from "node:path";
+import { svelte, vitePreprocess } from "@sveltejs/vite-plugin-svelte";
 import type { UserConfig } from "vite";
 
 export default {

@@ -1,6 +1,6 @@
 <script lang="ts">
-import { createQuery } from "@tanstack/svelte-query";
 import { trpcClient } from "@/api-client";
+import { createQuery } from "@tanstack/svelte-query";
 
 $: query = createQuery({
   queryKey: ["todos"],

@@ -15,3 +15,6 @@ jobs:
 
       - name: Typecheck
         run: bun typecheck
+
+      - name: Lint and format
+        run: bun check
