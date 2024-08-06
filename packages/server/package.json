@@ -8,11 +8,10 @@
   "dependencies": {
     "@hono/trpc-server": "^0.1.1",
     "@trpc/server": "^10.45.2",
-    "hono": "^4.5.3",
+    "hono": "^4.5.4",
     "zod": "^3.23.8"
   },
   "devDependencies": {
-    "@types/bun": "^1.1.6",
-    "typescript": "^5.5.4"
+    "@types/bun": "^1.1.6"
   }
 }
