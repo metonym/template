@@ -1,11 +1,11 @@
-import MagicString from "magic-string";
 import { walk } from "estree-walker";
+import MagicString from "magic-string";
 import { parse } from "svelte/compiler";
 import type { SveltePreprocessor } from "svelte/types/compiler/preprocess";
 
-interface Options {
+type Options = {
   ignore?: boolean;
-}
+};
 
 export const preprocessor: SveltePreprocessor<"markup", Options> = (
   options

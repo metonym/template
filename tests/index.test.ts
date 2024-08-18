@@ -1,5 +1,5 @@
-import type { Processed } from "svelte/types/compiler/preprocess";
 import { expect, test } from "bun:test";
+import type { Processed } from "svelte/types/compiler/preprocess";
 import * as API from "../src";
 
 const preprocess = (content: string) =>
