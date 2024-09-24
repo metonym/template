@@ -9,8 +9,8 @@
     "check": "bunx biome check --write ."
   },
   "devDependencies": {
-    "@biomejs/biome": "1.8.3",
-    "lefthook": "^1.7.11",
-    "typescript": "^5.5.4"
+    "@biomejs/biome": "^1.9.2",
+    "lefthook": "^1.7.16",
+    "typescript": "^5.6.2"
   }
 }
