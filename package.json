@@ -5,7 +5,7 @@
     "start": "bun run --filter server start",
     "dev": "bun --filter '*' dev",
     "build": "bun --filter '*' build",
-    "typecheck": "bunx tsc --noEmit",
+    "typecheck": "bunx tsc",
     "check": "bunx biome check --write ."
   },
   "devDependencies": {

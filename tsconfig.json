@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "noEmit": true,
+    "incremental": true,
     "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "node",
