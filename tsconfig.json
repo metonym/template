@@ -1,11 +1,10 @@
 {
   "compilerOptions": {
-    "declaration": true,
     "esModuleInterop": true,
+    "lib": ["esnext"],
     "moduleResolution": "node",
-    "outDir": "lib",
+    "skipLibCheck": true,
     "strict": true
   },
-  "include": ["src"],
-  "exclude": ["src/*test.ts"]
+  "include": ["src/**/*", "tests/**/*"]
 }

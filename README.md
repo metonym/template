@@ -1,47 +1,29 @@
-# plugin-postcss
+# postcss-plugin-name
 
-[![Build][build]][build-badge]
+> PostCSS plugin
 
-> PostCSS plugin template.
-
-Brief description describing the purpose of the [PostCSS](https://github.com/postcss/postcss) plugin.
-
-## Install
+## Installation
 
 ```bash
-yarn add -D plugin-postcss
-# OR
-npm i -D plugin-postcss
+# NPM
+npm i -D postcss-plugin-name
+
+# pnpm
+pnpm i -D postcss-plugin-name
+
+# Yarn
+yarn add -D postcss-plugin-name
+
+# Bun
+bun add -D postcss-plugin-name
 ```
 
 ## Usage
 
-### Node.js
-
 ```js
-const postcss = require("postcss");
-const { plugin } = require("plugin-postcss");
+import { pluginName } from "postcss-plugin-name";
 
-postcss(plugin)
-  .process("* { color: red; }", {
-    from: undefined,
-  })
-  .then((result) => {
-    console.log(result.css);
-  });
-```
-
-### Options
-
-```ts
-plugin(options?: Options);
-
-interface Options {
-  /**
-   * Relative path to processed HTML file
-   */
-  path?: string;
-}
+postcss([pluginName()]).process(css).css;
 ```
 
 ## Changelog
@@ -51,6 +33,3 @@ interface Options {
 ## License
 
 [MIT](LICENSE)
-
-[build]: https://travis-ci.com/metonym/template.svg?branch=plugin-postcss
-[build-badge]: https://travis-ci.com/metonym/template

@@ -1,36 +1,33 @@
 {
-  "name": "plugin-postcss",
+  "name": "postcss-plugin-name",
   "version": "0.1.0",
   "license": "MIT",
-  "description": "PostCSS plugin template",
+  "description": "<>",
   "author": "Eric Liu (https://github.com/metonym)",
-  "main": "./lib/plugin.js",
-  "types": "./lib/plugin.d.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "test": "tsnd src/*.test.ts",
-    "test:tdd": "tsnd --respawn src/*.test.ts",
-    "prepack": "tsc"
-  },
-  "dependencies": {
-    "postcss": "^7.0.32"
+    "test": "bun test",
+    "build": "bun --bun tsc --project tsconfig.build.json"
   },
   "devDependencies": {
-    "@types/node": "^14.0.14",
-    "ts-node-dev": "^1.0.0-pre.49",
-    "typescript": "^3.9.5"
+    "@types/bun": "^1.1.14",
+    "@types/jest": "^29.5.14",
+    "postcss": "^8.4.49",
+    "typescript": "^5.7.2"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/metonym/template.git"
+    "url": "git+https://github.com/metonym/postcss-plugin-name.git"
   },
-  "homepage": "https://github.com/metonym/template",
-  "bugs": "https://github.com/metonym/template/issues",
+  "homepage": "https://github.com/metonym/postcss-plugin-name",
+  "bugs": "https://github.com/metonym/postcss-plugin-name/issues",
   "keywords": [
     "postcss",
     "postcss plugin",
     "plugin"
   ],
   "files": [
-    "lib"
+    "dist"
   ]
 }
