@@ -10,7 +10,7 @@ $: query = createQuery({
 </script>
 
 <div class="font-semibold text-slate-500">
-  {#if $query.isLoading}
+  {#if $query.isPending}
     <p>Loading...</p>
   {:else if $query.isError}
     <p>Error: {$query.error.message}</p>
