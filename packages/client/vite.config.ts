@@ -1,5 +1,6 @@
 import path from "node:path";
 import { svelte, vitePreprocess } from "@sveltejs/vite-plugin-svelte";
+import tailwindcss from "@tailwindcss/vite";
 import type { UserConfig } from "vite";
 
 export default {
@@ -8,13 +9,11 @@ export default {
     outDir: "../server/dist",
   },
   plugins: [
+    tailwindcss(),
     svelte({
       preprocess: vitePreprocess(),
     }),
   ],
-  define: {
-    __TS: JSON.stringify(new Date().toLocaleString()),
-  },
   server: {
     proxy: {
       // Proxy /api requests to the backend server.
