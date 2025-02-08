@@ -8,7 +8,7 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "test": "bun test",
-    "prepack": "tsc --project tsconfig.build.json"
+    "build": "bun --bun tsc --project tsconfig.build.json"
   },
   "devDependencies": {
     "@types/bun": "latest",
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/metonym/template"
+    "url": "git+https://github.com/metonym/template.git"
   },
   "homepage": "https://github.com/metonym/template",
   "bugs": "https://github.com/metonym/template/issues",
