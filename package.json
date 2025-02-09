@@ -11,7 +11,7 @@
     "build": "bun --bun tsc --project tsconfig.build.json"
   },
   "dependencies": {
-    "magic-string": "^0.30.11"
+    "magic-string": "^0.30.17"
   },
   "devDependencies": {
     "@types/bun": "latest",
