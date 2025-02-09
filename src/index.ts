@@ -1,7 +1,14 @@
-import { walk } from "estree-walker";
+import { type AST, walk } from "estree-walker";
 import MagicString from "magic-string";
-import { parse } from "svelte/compiler";
-import type { SveltePreprocessor } from "svelte/types/compiler/preprocess";
+import { parse, type SveltePreprocessor } from "svelte/compiler";
+
+function isComponent(node: AST.SvelteNode): node is AST.Component {
+  return node.type === "Component";
+}
+
+function isText(node: AST.SvelteNode): node is AST.Text {
+  return node.type === "Text";
+}
 
 type Options = {
   ignore?: boolean;
@@ -18,30 +25,28 @@ export const preprocessor: SveltePreprocessor<"markup", Options> = (
       if (ignore) return;
       if (filename && /node_modules/.test(filename)) return;
 
-      const ast = parse(content);
+      const ast = parse(content, { modern: true });
       const s = new MagicString(content);
       const class_names = new Set();
 
       walk(ast, {
-        enter(node, parent) {
-          if (node.type === "InlineComponent") {
-            const class_attribute = node.attributes.find(
-              ({ type, name }) => type === "Attribute" && name === "class"
-            );
+        enter(node) {
+          if (isComponent(node)) {
+            for (const attribute of node.attributes) {
+              if (
+                attribute.type === "Attribute" &&
+                attribute.name === "class"
+              ) {
+                if (Array.isArray(attribute.value)) {
+                  const value = attribute.value[0];
 
-            class_attribute?.value[0]?.raw
-              .split(" ")
-              .forEach((class_name: string) => {
-                class_names.add(class_name);
-              });
-          }
-
-          if (node.type === "ClassSelector" && class_names.has(node.name)) {
-            if ((parent.children ?? []).length > 1) {
-              const selector = content.slice(parent.start, parent.end);
-              s.overwrite(parent.start, parent.end, `:global(${selector})`);
-            } else {
-              s.overwrite(node.start, node.end, `:global(.${node.name})`);
+                  if (isText(value)) {
+                    for (const class_name of value.data.split(" ")) {
+                      class_names.add(class_name);
+                    }
+                  }
+                }
+              }
             }
           }
         },
