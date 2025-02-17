@@ -1,18 +1,21 @@
 {
   "private": true,
+  "name": "astro-svelte",
   "type": "module",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "format": "prettier --write --plugin prettier-plugin-svelte . --ignore-path .gitignore"
+    "format": "bunx biome check --write ."
   },
   "devDependencies": {
-    "@astrojs/svelte": "^4.0.4",
-    "astro": "^3.6.4",
-    "prettier": "^3.1.0",
-    "prettier-plugin-svelte": "^3.1.2",
-    "svelte": "^4.2.8",
-    "typescript": "^5.3.2"
+    "@astrojs/mdx": "^4.0.8",
+    "@astrojs/svelte": "^7.0.4",
+    "@biomejs/biome": "^1.9.4",
+    "@sveltejs/vite-plugin-svelte": "^5.0.3",
+    "astro": "^5.3.0",
+    "lefthook": "^1.10.10",
+    "svelte": "^5.20.1",
+    "typescript": "^5.7.3"
   }
 }

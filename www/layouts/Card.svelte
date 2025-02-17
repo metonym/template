@@ -1,7 +1,6 @@
 <script lang="ts">
-  export let title: string;
-  export let body: string;
-  export let href: string;
+let { title, body, href }: { title: string; body: string; href: string } =
+  $props();
 </script>
 
 <li class="link-card">
