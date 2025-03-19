@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "erasableSyntaxOnly": true,
     "noEmit": true,
     "incremental": true,
     "target": "ESNext",
