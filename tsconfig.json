@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "erasableSyntaxOnly": true,
     "esModuleInterop": true,
     "lib": ["esnext"],
     "moduleResolution": "node",
