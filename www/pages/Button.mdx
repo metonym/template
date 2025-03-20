@@ -2,10 +2,11 @@
 layout: "@layouts/Layout.astro"
 ---
 
-import Button from "@src/components/Button.svelte";
+import { Button } from "astro-svelte";
 
 # Button
 
-This a button.
+This is a button.
 
-<Button client:idle />
+<Button client:idle count={'0'} />
+

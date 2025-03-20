@@ -1,8 +1,12 @@
 {
   "extends": "astro/tsconfigs/strictest",
   "compilerOptions": {
+    "erasableSyntaxOnly": true,
+    "checkJs": true,
     "baseUrl": ".",
     "paths": {
+      "astro-svelte": ["./src"],
+      "astro-svelte/*": ["./src/*"],
       "@src/*": ["./src/*"],
       "@layouts/*": ["./www/layouts/*"]
     }
