@@ -10,13 +10,13 @@
   },
   "devDependencies": {
     "@astrojs/mdx": "^4.2.1",
-    "@astrojs/svelte": "^7.0.6",
-    "@biomejs/biome": "^1.9.4",
+    "@astrojs/svelte": "^7.0.7",
+    "@biomejs/biome": "1.9.4",
     "@sveltejs/vite-plugin-svelte": "^5.0.3",
-    "@types/node": "^22.13.10",
-    "astro": "^5.5.3",
-    "lefthook": "^1.11.3",
-    "svelte": "^5.23.2",
+    "@types/node": "^22.13.13",
+    "astro": "^5.5.4",
+    "lefthook": "^1.11.5",
+    "svelte": "^5.25.3",
     "typescript": "^5.8.2"
   }
 }
