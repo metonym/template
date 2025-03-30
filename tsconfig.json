@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "erasableSyntaxOnly": true,
     "module": "esnext",
     "moduleResolution": "bundler",
     "target": "es2017",
