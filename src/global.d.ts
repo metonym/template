@@ -15,7 +15,7 @@ declare module "estree-walker" {
 declare module "svelte/compiler" {
   export type SveltePreprocessor<
     PreprocessorType extends keyof PreprocessorGroup,
-    Options = any
+    Options = unknown
   > = (
     options?: Options
   ) => Required<Pick<PreprocessorGroup, PreprocessorType>>;

@@ -13,7 +13,7 @@
   "dependencies": {
     "estree-walker": "^3.0.3",
     "magic-string": "^0.30.17",
-    "svelte": "^5.19.9"
+    "svelte": "^5.25.3"
   },
   "devDependencies": {
     "@types/bun": "latest",
