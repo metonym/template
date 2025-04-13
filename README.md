@@ -8,14 +8,14 @@ Use [degit](https://github.com/Rich-Harris/degit) to copy the template:
 
 ```sh
 npx degit metonym/template#<branch> <project-name>
-cd <project-name> && yarn
+cd <project-name> && bun install
 ```
 
 Example using the `typescript` template:
 
 ```sh
 npx degit metonym/template#typescript typescript
-cd typescript && yarn
+cd typescript && bun install
 ```
 
 There are five categories of templates:
@@ -36,7 +36,7 @@ General purpose, library and plugin templates use the native Node.js assertion m
 
 ```sh
 npx degit metonym/template#typescript typescript
-cd typescript && yarn
+cd typescript && bun install
 ```
 
 ### Generic library
@@ -45,35 +45,35 @@ cd typescript && yarn
 
 ```sh
 npx degit metonym/template#vite-lib my-vite-lib
-cd my-vite-lib && yarn
+cd my-vite-lib && bun install
 ```
 
 - **[esbuild-lib](https://github.com/metonym/template/tree/esbuild-lib)**: Template for developing libraries using [esbuild](https://github.com/evanw/esbuild).
 
 ```sh
 npx degit metonym/template#esbuild-lib my-esbuild-lib
-cd my-esbuild-lib && yarn
+cd my-esbuild-lib && bun install
 ```
 
 - **[typescript-lib](https://github.com/metonym/template/tree/typescript-lib)**: The same as the `typescript` template but with additional npm publishing metadata.
 
 ```sh
 npx degit metonym/template#typescript-lib my-typescript-lib
-cd my-typescript-lib && yarn
+cd my-typescript-lib && bun install
 ```
 
 - **[bun-lib](https://github.com/metonym/template/tree/bun-lib)**: The same as the `bun-lib` template but using Bun instead of Yarn/Vitest.
 
 ```sh
 npx degit metonym/template#bun-lib my-bun-lib
-cd my-bun-lib && yarn
+cd my-bun-lib && bun install
 ```
 
 - **[rollup-lib](https://github.com/metonym/template/tree/rollup-lib)**: Bundle projects with Rollup to support CJS, ES, UMD output formats.
 
 ```sh
 npx degit metonym/template#rollup-lib my-rollup-lib
-cd my-rollup-lib && yarn
+cd my-rollup-lib && bun install
 ```
 
 ### Components
@@ -82,28 +82,28 @@ cd my-rollup-lib && yarn
 
 ```sh
 npx degit metonym/template#component-svelte svelte-component
-cd svelte-component && yarn
+cd svelte-component && bun install
 ```
 
 - **[component-sveltekit](https://github.com/metonym/template/tree/component-sveltekit)**: Develop Svelte components using a "README-driven development" approach with SvelteKit.
 
 ```sh
 npx degit metonym/template#component-sveltekit svelte-component
-cd svelte-component && yarn
+cd svelte-component && bun install
 ```
 
 - **[component-library-sveltekit](https://github.com/metonym/template/tree/component-library-sveltekit)**: Develop Svelte components using a "README-driven development" approach with SvelteKit.
 
 ```sh
 npx degit metonym/template#component-library-sveltekit svelte-component
-cd svelte-component && yarn
+cd svelte-component && bun install
 ```
 
 - **[vite-lib-svelte](https://github.com/metonym/template/tree/vite-lib-svelte)**: Template for developing Svelte component libraries using [vite](https://github.com/vitejs/vite).
 
 ```sh
 npx degit metonym/template#vite-lib-svelte my-vite-lib-svelte
-cd my-vite-lib-svelte && yarn
+cd my-vite-lib-svelte && bun install
 ```
 
 ### Plugins
@@ -112,35 +112,35 @@ cd my-vite-lib-svelte && yarn
 
 ```sh
 npx degit metonym/template#vite-plugin vite-plugin
-cd vite-plugin && yarn
+cd vite-plugin && bun install
 ```
 
 - **[plugin-posthtml](https://github.com/metonym/template/tree/plugin-posthtml)**: Develop PostHTML plugins written in TypeScript. Test using vitest.
 
 ```sh
 npx degit metonym/template#plugin-posthtml posthtml-template
-cd posthtml-template && yarn
+cd posthtml-template && bun install
 ```
 
 - **[plugin-postcss](https://github.com/metonym/template/tree/plugin-postcss)**: Develop PostCSS plugins written in TypeScript.
 
 ```sh
 npx degit metonym/template#plugin-postcss postcss-template
-cd postcss-template && yarn
+cd postcss-template && bun install
 ```
 
 - **[svelte-preprocessor](https://github.com/metonym/template/tree/svelte-preprocessor)**: Develop Svelte preprocessors using TypeScript and vitest.
 
 ```sh
 npx degit metonym/template#svelte-preprocessor svelte-preprocess-name
-cd svelte-preprocess-name && yarn
+cd svelte-preprocess-name && bun install
 ```
 
 - **[svelte-preprocess-bun](https://github.com/metonym/template/tree/svelte-preprocess-bun)**: Develop Svelte preprocessors using TypeScript and bun.
 
 ```sh
 npx degit metonym/template#svelte-preprocess-bun svelte-preprocess-name
-cd svelte-preprocess-name && yarn
+cd svelte-preprocess-name && bun install
 ```
 
 ### Web apps
@@ -163,42 +163,42 @@ cd my-astro-site && npm install
 
 ```sh
 npx degit metonym/template#astro-svelte my-astro-svelte-app
-cd my-astro-svelte-app && yarn
+cd my-astro-svelte-app && bun install
 ```
 
 - **[webpack-svelte](https://github.com/metonym/template/tree/webpack-svelte)**: Build Svelte apps with webpack.
 
 ```sh
 npx degit metonym/template#webpack-svelte my-webpack-svelte-app
-cd my-webpack-svelte-app && yarn
+cd my-webpack-svelte-app && bun install
 ```
 
 - **[webpack-svelte-lite](https://github.com/metonym/template/tree/webpack-svelte-lite)**: Based on `webpack-svelte`, except CSS is not emitted to a separate file.
 
 ```sh
 npx degit metonym/template#webpack-svelte-lite my-webpack-svelte-lite-app
-cd my-webpack-svelte-lite-app && yarn
+cd my-webpack-svelte-lite-app && bun install
 ```
 
 - **[rollup-svelte](https://github.com/metonym/template/tree/rollup-svelte)**: Build Svelte apps with Rollup.
 
 ```sh
 npx degit metonym/template#rollup-svelte my-rollup-svelte-app
-cd my-rollup-svelte-app && yarn
+cd my-rollup-svelte-app && bun install
 ```
 
 - **[svite](https://github.com/metonym/template/tree/svite)**: Build Svelte apps with svite and MDsveX.
 
 ```sh
 npx degit metonym/template#svite my-svite-app
-cd my-svite-app && yarn
+cd my-svite-app && bun install
 ```
 
 - **[vite-svelte](https://github.com/metonym/template/tree/vite-svelte)**: Build Svelte apps with Vite.
 
 ```sh
 npx degit metonym/template#vite-svelte my-vite-svelte-app
-cd my-vite-svelte-app && yarn
+cd my-vite-svelte-app && bun install
 ```
 
 - **[vite-svelte-tailwind](https://github.com/metonym/template/tree/vite-svelte-tailwind)**: Build Svelte apps with Vite and Tailwind.
@@ -212,7 +212,7 @@ cd my-vite-svelte-app && npm i
 
 ```sh
 npx degit metonym/template#sveltekit-static my-sveltekit-static-app
-cd my-sveltekit-static-app && yarn
+cd my-sveltekit-static-app && bun install
 ```
 
 ## License
