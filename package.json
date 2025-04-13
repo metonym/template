@@ -8,7 +8,7 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "test": "bun test",
-    "build": "bun --bun tsc --project tsconfig.build.json"
+    "build": "bun --bun tsc -p tsconfig.build.json"
   },
   "devDependencies": {
     "@types/bun": "latest",
