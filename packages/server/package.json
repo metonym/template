@@ -8,10 +8,10 @@
   "dependencies": {
     "@hono/trpc-server": "^0.3.4",
     "@trpc/server": "^10.45.2",
-    "hono": "^4.7.5",
-    "zod": "^3.24.2"
+    "hono": "^4.7.7",
+    "zod": "^3.24.3"
   },
   "devDependencies": {
-    "@types/bun": "^1.2.6"
+    "@types/bun": "^1.2.10"
   }
 }

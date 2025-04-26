@@ -10,7 +10,10 @@ $: query = createQuery({
 </script>
 
 <div
-  class={["font-semibold text-avocado-600", $query.isPending && "text-avocado-500"]}
+  class={[
+    "font-semibold text-avocado-600",
+    $query.isPending && "text-avocado-500",
+  ]}
 >
   {#if $query.isPending}
     <p>Loading...</p>
