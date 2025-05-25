@@ -6,22 +6,16 @@
     "build": "vite build",
     "preview": "vite preview"
   },
-  "devDependencies": {
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
-    "@vitejs/plugin-react": "^4.3.1",
-    "autoprefixer": "^10.4.19",
-    "postcss": "^8.4.40",
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.7",
+    "@vitejs/plugin-react": "^4.5.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "tailwindcss": "^3.4.7",
-    "typescript": "^5.5.4",
-    "vite": "^5.3.5"
+    "tailwindcss": "^4.1.7",
+    "vite": "^6.3.5"
   },
-  "postcss": {
-    "plugins": {
-      "tailwindcss": {},
-      "autoprefixer": {}
-    }
+  "devDependencies": {
+    "@types/react": "^18.3.22",
+    "@types/react-dom": "^18.3.7"
   }
 }
