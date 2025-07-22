@@ -7,16 +7,16 @@
     "build": "vite build"
   },
   "dependencies": {
-    "@sveltejs/vite-plugin-svelte": "^5.1.0",
-    "@tailwindcss/vite": "^4.1.10",
-    "@tanstack/svelte-query": "^5.80.7",
+    "@sveltejs/vite-plugin-svelte": "^5.1.1",
+    "@tailwindcss/vite": "^4.1.11",
+    "@tanstack/svelte-query": "^5.83.0",
     "@trpc/client": "^10.45.2",
-    "svelte": "^5.34.5",
-    "tailwindcss": "^4.1.10",
+    "svelte": "^5.36.13",
+    "tailwindcss": "^4.1.11",
     "vite": "^6.3.5"
   },
   "devDependencies": {
-    "@types/bun": "^1.2.16",
+    "@types/bun": "^1.2.19",
     "typescript": "^5.8.3"
   }
 }
