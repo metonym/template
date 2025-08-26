@@ -8,15 +8,15 @@
   },
   "dependencies": {
     "@sveltejs/vite-plugin-svelte": "^5.1.1",
-    "@tailwindcss/vite": "^4.1.11",
-    "@tanstack/svelte-query": "^5.83.0",
+    "@tailwindcss/vite": "^4.1.12",
+    "@tanstack/svelte-query": "^5.85.5",
     "@trpc/client": "^10.45.2",
-    "svelte": "^5.36.13",
-    "tailwindcss": "^4.1.11",
+    "svelte": "^5.38.5",
+    "tailwindcss": "^4.1.12",
     "vite": "^6.3.5"
   },
   "devDependencies": {
-    "@types/bun": "^1.2.19",
+    "@types/bun": "^1.2.21",
     "typescript": "^5.8.3"
   }
 }
