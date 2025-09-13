@@ -1,19 +1,33 @@
-# bun-lib
+# bun-fastmcp
 
-> Template for building libraries using Bun.
+> Template for MCP server using Bun and FastMCP
 
 ## Quick Start
 
 ```sh
-npx degit metonym/template#bun-lib bun-lib
-cd bun-lib
+npx degit metonym/template#bun-fastmcp bun-fastmcp
+cd bun-fastmcp
 bun i
 ```
 
-## Changelog
+## Local Development
 
-[CHANGELOG.md](CHANGELOG.md)
+Run the dev server locally using the `--hot` flag. Bun will automatically restart the server when you make changes to the code.
 
-## License
+```sh
+bun dev:mcp
+```
 
-[MIT](LICENSE)
+Next, you can preview the service using the FastMCP CLI.
+
+```sh
+bun dev:inspect
+```
+
+## Production
+
+No transpilation is required for production.
+
+```sh
+bun run start
+```

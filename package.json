@@ -4,26 +4,20 @@
   "license": "MIT",
   "description": "<< >>",
   "author": "Eric Liu (https://github.com/metonym)",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
   "scripts": {
+    "dev:mcp": "bun --hot src/index.ts",
+    "dev:inspect": "bunx fastmcp inspect src/index.ts",
+    "start": "bun src/index.ts",
     "test": "bun test",
-    "build": "bun --bun tsc -p tsconfig.build.json"
+    "typecheck": "tsc --noEmit",
+    "format": "bunx biome check --write ."
+  },
+  "dependencies": {
+    "fastmcp": "^3.17.0"
   },
   "devDependencies": {
+    "@biomejs/biome": "2.2.4",
     "@types/bun": "latest",
     "typescript": "latest"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/metonym/template.git"
-  },
-  "homepage": "https://github.com/metonym/template",
-  "bugs": "https://github.com/metonym/template/issues",
-  "keywords": [
-    "typescript"
-  ],
-  "files": [
-    "dist"
-  ]
+  }
 }
