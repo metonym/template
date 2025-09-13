@@ -215,6 +215,13 @@ npx degit metonym/template#sveltekit-static my-sveltekit-static-app
 cd my-sveltekit-static-app && bun install
 ```
 
+- **[bun-fastmcp](https://github.com/metonym/template/tree/bun-fastmcp)**: Build MCP servers with Bun and FastMCP.
+
+```sh
+npx degit metonym/template#bun-fastmcp my-fastmcp
+cd my-fastmcp && bun install
+```
+
 ## License
 
 [MIT](LICENSE)
