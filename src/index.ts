@@ -26,5 +26,6 @@ server.start({
   transportType: "httpStream",
   httpStream: {
     port: PORT,
+    host: "0.0.0.0",
   },
 });
