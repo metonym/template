@@ -2,6 +2,8 @@ import { FastMCP } from "fastmcp";
 import { z } from "zod";
 import { add } from "./add";
 
+const PORT = +(process.env.PORT ?? 8081);
+
 const server = new FastMCP({
   name: "My Server",
   version: "1.0.0",
@@ -23,6 +25,6 @@ server.addTool({
 server.start({
   transportType: "httpStream",
   httpStream: {
-    port: 8081,
+    port: PORT,
   },
 });
