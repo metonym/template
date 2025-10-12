@@ -13,10 +13,10 @@
     "format": "bunx biome check --write ."
   },
   "dependencies": {
-    "fastmcp": "^3.17.0"
+    "fastmcp": "^3.19.1"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.2.4",
+    "@biomejs/biome": "2.2.5",
     "@types/bun": "latest",
     "typescript": "latest"
   }
