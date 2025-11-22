@@ -17,4 +17,4 @@ jobs:
         run: bun typecheck
 
       - name: Lint and format
-        run: bun check
+        run: biome ci --error-on-warnings
