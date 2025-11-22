@@ -7,13 +7,13 @@
     "start": "bun run --filter server start",
     "dev": "bun --filter '*' dev",
     "build": "bun --filter '*' build",
-    "typecheck": "bunx tsc",
+    "typecheck": "tsgo",
     "lint": "biome lint .",
     "lint:fix": "biome check --write --unsafe ."
   },
   "devDependencies": {
     "@biomejs/biome": "2.3.7",
-    "lefthook": "^1.13.6",
-    "typescript": "^5.9.3"
+    "@typescript/native-preview": "^7.0.0-dev.20251115.1",
+    "lefthook": "^1.13.6"
   }
 }
