@@ -11,6 +11,9 @@ export default {
   plugins: [
     tailwindcss(),
     svelte({
+      compilerOptions: {
+        runes: true,
+      },
       preprocess: vitePreprocess(),
     }),
   ],
