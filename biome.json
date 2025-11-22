@@ -1,25 +1,98 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.9.2/schema.json",
-  "organizeImports": {
-    "enabled": true
+  "$schema": "https://biomejs.dev/schemas/2.3.7/schema.json",
+  "assist": {
+    "actions": {
+      "source": {
+        "organizeImports": "on"
+      }
+    }
+  },
+  "files": {
+    "includes": ["**", "!!**/dist"]
   },
   "formatter": {
-    "ignore": ["dist"],
-    "attributePosition": "multiline",
+    "enabled": true,
     "indentStyle": "space"
   },
+  "html": {
+    "experimentalFullSupportEnabled": true,
+    "formatter": {
+      "indentScriptAndStyle": true
+    }
+  },
+  "css": {
+    "parser": {
+      "tailwindDirectives": true
+    }
+  },
   "linter": {
-    "ignore": ["dist"],
     "enabled": true,
     "rules": {
-      "recommended": true
+      "recommended": true,
+      "performance": {
+        "noAccumulatingSpread": "error",
+        "noAwaitInLoops": "error",
+        "noDelete": "error",
+        "noDynamicNamespaceImportAccess": "error",
+        "noNamespaceImport": "error",
+        "noReExportAll": "error",
+        "useTopLevelRegex": "error"
+      },
+      "correctness": {
+        "noUnreachable": "error",
+        "noUnusedFunctionParameters": "error",
+        "noUnusedImports": "error",
+        "noUnusedLabels": "error",
+        "noUnusedVariables": "error"
+      },
+      "complexity": {
+        "noCommaOperator": "error",
+        "noForEach": "error",
+        "noImportantStyles": "off",
+        "noUselessConstructor": "error",
+        "noUselessEmptyExport": "error",
+        "noUselessFragments": "error",
+        "noUselessLabel": "error",
+        "noUselessLoneBlockStatements": "error",
+        "noUselessRename": "error",
+        "noUselessSwitchCase": "error",
+        "noUselessTypeConstraint": "error",
+        "useArrowFunction": "error",
+        "useLiteralKeys": "error"
+      },
+      "suspicious": {
+        "noExplicitAny": "error"
+      },
+      "style": {
+        "noImplicitBoolean": "error",
+        "noNegationElse": "error",
+        "noParameterAssign": "error",
+        "noRestrictedGlobals": "error",
+        "noUnusedTemplateLiteral": "error",
+        "useDefaultParameterLast": "error",
+        "useExponentiationOperator": "error",
+        "useNamingConvention": "error",
+        "useNodejsImportProtocol": "error",
+        "useNumberNamespace": "error",
+        "useSingleVarDeclarator": "error",
+        "noCommonJs": "error",
+        "noDescendingSpecificity": "off"
+      },
+      "nursery": {
+        "useFind": "error",
+        "noForIn": "error"
+      }
     }
   },
   "overrides": [
     {
-      "include": ["*.svelte"],
+      "includes": ["packages/client/src/**/*.svelte"],
       "linter": {
         "rules": {
+          "correctness": {
+            "noUnusedImports": "off",
+            "noUnusedVariables": "off"
+          },
           "style": {
             "useConst": "off",
             "useImportType": "off"
