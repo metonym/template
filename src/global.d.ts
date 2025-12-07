@@ -1,7 +1,5 @@
 declare module "estree-walker" {
-  import { AST } from "svelte/src/compiler/types/template";
-
-  export { AST };
+  export type { AST } from "svelte/src/compiler/types/template";
 
   export declare function walk(
     ast: AST,
