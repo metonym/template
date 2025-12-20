@@ -1,6 +1,7 @@
 import { trpcServer } from "@hono/trpc-server";
 import { Hono } from "hono";
 import { serveStatic } from "hono/bun";
+import { compress } from "hono/compress";
 import { csrf } from "hono/csrf";
 import { logger } from "hono/logger";
 import { secureHeaders } from "hono/secure-headers";
@@ -11,9 +12,10 @@ const app = new Hono();
 
 if (NODE_ENV === "production") {
   app
-    .use(secureHeaders())
-    .use(csrf({ origin: new URL(SITE_URL).host }))
     .use(logger())
+    .use(csrf({ origin: new URL(SITE_URL).host }))
+    .use(secureHeaders())
+    .use(compress())
     .use("/*", serveStatic({ root: "./dist" }));
   console.log(NODE_ENV, SITE_URL);
 }
