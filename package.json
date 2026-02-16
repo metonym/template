@@ -12,7 +12,7 @@
     "lint:fix": "biome check --write --unsafe ."
   },
   "devDependencies": {
-    "@biomejs/biome": "2.3.11",
+    "@biomejs/biome": "2.4.0",
     "@typescript/native-preview": "^7.0.0-dev.20260105.1",
     "lefthook": "^1.13.6"
   }
