@@ -5,8 +5,8 @@
   ],
   "scripts": {
     "start": "bun run --filter server start",
-    "dev": "bun --filter '*' dev",
-    "build": "bun --filter '*' build",
+    "dev": "bun run --parallel --workspaces dev",
+    "build": "bun run --parallel --workspaces --if-present build",
     "typecheck": "tsgo",
     "lint": "biome lint .",
     "lint:fix": "biome check --write --unsafe ."
